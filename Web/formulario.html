@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Resumen</title>
+		<title>Formulario</title>
 
 		<!-- Bootstrap CSS -->
 		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -50,7 +50,7 @@
 						</ul>
 					</li>
 					<li >
-						<a href="include/t2/index.html" >Tema 2: HTML5 </a>
+						<a href="include/t2/index.html" >Tema 2: HTML 5 </a>
 					</li>
 					<li>
 						<a href="formulario.html" >Formulario </a>
@@ -59,24 +59,32 @@
 			</div><!-- /.navbar-collapse -->
 		</nav>
 
-		<h1 class="text-center">Temario DWEC</h1>
+		<h1 class="text-center">Formulario DWEC</h1>
 
 		<section class="row well well-lg">
-			<article class="list-group">
-				<a href="include/t1/index.html" class="list-group-item list-group-item-info">
-					Tema 1:
-					<strong>Introduccion</strong>
-				</a>
-				<br>
-				<a href="include/t2/index.html" class="list-group-item list-group-item-info">
-					Tema 2:
-					<strong>HTML5</strong>			
-				</a>
-				<br>
-				<a href="formulario.html" class="list-group-item list-group-item-info">
-					Danos <strong>tu opinión</strong>
-				</a>				
-			</article>
+			<form action=" " method="POST" role="form">
+				<legend>Tu opinión nos sirve para mejorar</legend>
+			
+				<article class="form-group">
+					<label for="">Nombre</label>
+					<input type="text" class="form-control" required="required" name="name" id="name" placeholder="Escribe tu nombre">
+				</article>
+
+				<article class="form-group">
+					<label for="">E-mail</label>
+					<input type="email" name="mail" id="inputMail" class="form-control" required="required" placeholder="ejemplo@tuemail.es">
+				</article>
+			
+				<article class="form-group">
+					<label for="">DNI</label>
+					<input type="dni" name="dni" id="inputDni" class="form-control" required="required" placeholder="72111000-L">
+				</article>
+				
+				<input class="hidden" type="date" name="fecha" id="inputfecha" class="form-control">
+
+				<button type="submit" class="btn btn-primary">Enviar</button>
+			</form>
+
 		</section>
 		<!-- jQuery -->
 		<script src="//code.jquery.com/jquery.js"></script>

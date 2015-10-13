@@ -50,50 +50,138 @@
 						</ul>
 					</li>
 					<li >
-						<a href="comparativa.php" >Tema 2: html5 <b class="caret"></b></a>
+						<a href="../t2/index.html" >Tema 2: html5 <b class="caret"></b></a>
 					</li>
 					<li>
-						<a href="financiacion.php" class="dropdown-toggle" data-toggle="dropdown">Tema 3: FINANCIACION <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="financiacion.php#funciones">Funciones</a>
-							</li>
-							<li>
-								<a href="financiacion.php#fuentes" class="dropdown-toggle" data-toggle="dropdown">Fuentes de financiacion <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li>
-										<a href="financiacion.php#fuentesP">Fuentes PROPIAS de financiacion</a>
-									</li>
-									<li>
-										<a href="financiacion.php#fuentesA">Fuentes AJENAS de financiacion</a>
-									</li>
-								</ul>
-							</li>
-							
-						</ul>
+						<a href="../../formulario.html" class="dropdown-toggle" data-toggle="dropdown">Formulario </a>
 					</li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</nav>
 
-		<section class="panel">
+		<section class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 			<article class="panel panel-primary">
-				<div class="panel-header">
-					
+				<div class="panel-heading" role="tab" id="primary">
+					<h4 class="panel-title">
+        				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#cs" aria-expanded="true" aria-controls="cs">
+        					Cliente // Servidor
+        				</a>
+        			</h4>
 				</div>
-				<div class="panel-body">
-					
+				<div id="cs" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="primary">
+					<div class="panel-body">
+						<p>La Web funciona siguiendo el denominado modelo cliente-servidor, habitual en las aplicaciones que funcionan en una red. Existe un servidor, que es quien presta el servicio, y un cliente, que es quien lo recibe.</p>
+						<img src="../../img/t1-funcionamiento-01.jpg" class="img-responsive" alt="funcionamiento de una aplicacion web">
+					</div>
 				</div>
 			</article>
 
 			<article class="panel panel-success ">
-				<div class="panel-header">
-					
+				<div class="panel-heading" role="tab" id="success">
+					<h4 class="panel-title">
+        				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#cliente" aria-expanded="false" aria-controls="cliente">
+							Cliente
+						</a>
+					</h4>
 				</div>
-				<div class="panel-body">
-					
+				<div id="cliente" class="panel-collapse collapse" role="tabpanel" aria-labelledby="success">
+					<div class="panel-body">
+						<ul>
+							<li>
+								El cliente web es un programa con el que el usuario interacciona para solicitar a un servidor web el envío de páginas de información. Estas páginas se transfieren mediante el protocolo HTTP
+							</li>
+							<li>
+								Las páginas que se reciben son documentos de texto codificados en lenguaje HTML. El cliente web debe interpretar estos documentos para mostrárselos al usuario en el formato adecuado
+							</li>
+							<li>
+								Además, cuando lo que se recibe no es un documento de texto, sino un objeto multimedia (vídeo, sonido, etc.) no reconocido por el cliente web, éste debe activar una aplicación externa capaz de gestionarlo
+							</li>
+						</ul>
+					</div>
 				</div>
 			</article>
+
+			<article class="panel panel-info ">
+				<div class="panel-heading" role="tab" id="info">
+					<h4 class="panel-title">
+        				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#servidor" aria-expanded="false" aria-controls="servidor">
+							Servidor
+						</a>
+					</h4>
+				</div>
+				<div id="servidor" class="panel-collapse collapse" role="tabpanel" aria-labelledby="info">
+					<div class="panel-body">
+						<ul>
+							<li>
+								El servidor web es un programa que está permanentemente escuchando las peticiones de conexión de los clientes mediante el protocolo HTTP 
+
+							</li>
+							<li>
+								El proceso completo, desde que el usuario solicita una página hasta que el cliente web se la muestra con el formato adecuado, es el siguiente:
+								<ol>
+									<li>
+										El usuario especifica en el cliente web la dirección (URL) de la página que desea consultar
+									</li>
+									<li>
+										El cliente establece la conexión con el servidor web
+									</li>
+									<li>
+										El cliente solicita la página deseada
+									</li>
+									<li>
+										El servidor busca la página que ha sido solicitada en su sistema de ficheros, Si la encuentra, la envía al cliente; en caso contrario, devuelve un código de error
+									</li>
+									<li>
+										El cliente interpreta los códigos HTML y muestra la página al usuario
+									</li>
+									<li>
+										Se cierra la conexión
+									</li>
+								</ol>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</article>
+			<article class="panel panel-warning ">
+				<div class="panel-heading" role="tab" id="warn">
+					<h4 class="panel-title">
+        				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#pagWeb" aria-expanded="false" aria-controls="pagWeb">
+							Pagina Web
+						</a>
+					</h4>
+				</div>
+				<div id="pagWeb" class="panel-collapse collapse" role="tabpanel" aria-labelledby="warn">
+					<div class="panel-body">
+						<ul>
+							<li>
+								Una <strong>aplicación Web</strong> es un conjunto de páginas Web estáticas y dinámicas.
+
+							</li>
+							<li>
+								<p>Una <strong>página Web estática</strong> es aquélla que no cambia cuando un usuario la solicita: el servidor Web envía la página al navegador Web solicitante sin modificarla.</p>
+								<img src="../../img/t1-pagEstatica-01.jpg" class="img-responsive" alt="página estática"> 
+
+							</li>
+							<li>
+								<p>Por el contrario, si el servidor modifica las páginas Web antes de enviarlas al navegador solicitante será una:<strong>página dinámica.</strong></p>
+								<img src="../../img/t1-pagDinamica-01.jpg" class="img-responsive" alt="página dinámica"> 
+							</li>
+							<li>
+								Otro aspecto importante es el hecho de que se establece una <strong> conexión independiente</strong> para cada documento u objeto que se transmite. <br>
+								<small>Es decir, si una página contiene, por ejemplo, cuatro imágenes, entonces se establecen cinco conexiones independientes: una para la página propiamente dicha y otras cuatro para las imágenes</small>
+							</li>
+							<li>
+	  							<a href="trabajos/actividad05.pdf" target="_blank">
+	  								Actividad 5: Pagina Estática y dinámica
+	  							</a>
+	  						</li>
+						</ul>
+					</div>
+				</div>
+			</arcle>
+
 		</section>
 
 		

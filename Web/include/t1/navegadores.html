@@ -26,255 +26,270 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html">DWEC</a>
+				<a class="navbar-brand" href="../../index.html">DWEC</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					<li class="dropdown">
-						<a href="include/t1/index.html" class="dropdown-toggle" data-toggle="dropdown">Tema 1: Introducción <b class="caret"></b></a>
+						<a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Tema 1: Introducción <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li>
-								<a href="include/t1/navegadores.html">Navegadores Web</a>
+								<a href="navegadores.html">Navegadores Web</a>
 							</li>
 							<li>
-								<a href="include/t1/funcionWeb.html">Funcionamiento de una aplicacion web</a>
+								<a href="funcionWeb.html">Funcionamiento de una aplicacion web</a>
 							</li>
 							<li>
-								<a href="include/t1/lmsg.html">Lenguajes y tecnologías de programación</a>
+								<a href="lmsg.html">Lenguajes y tecnologías de programación</a>
 							</li>
 							<li>
-								<a href="include/t1/ampli.html">Ampliacion</a>
+								<a href="ampli.html">Ampliacion</a>
 							</li>
 						</ul>
 					</li>
 					<li >
-						<a href="comparativa.php" >Tema 2: html5 <b class="caret"></b></a>
+						<a href="../t2/index.html" >Tema 2: html5 <b class="caret"></b></a>
 					</li>
 					<li>
-						<a href="financiacion.php" class="dropdown-toggle" data-toggle="dropdown">Tema 3: FINANCIACION <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="financiacion.php#funciones">Funciones</a>
-							</li>
-							<li>
-								<a href="financiacion.php#fuentes" class="dropdown-toggle" data-toggle="dropdown">Fuentes de financiacion <b class="caret"></b></a>
-								<ul class="dropdown-menu">
-									<li>
-										<a href="financiacion.php#fuentesP">Fuentes PROPIAS de financiacion</a>
-									</li>
-									<li>
-										<a href="financiacion.php#fuentesA">Fuentes AJENAS de financiacion</a>
-									</li>
-								</ul>
-							</li>
-							
-						</ul>
+						<a href="../../formulario.html" class="dropdown-toggle" data-toggle="dropdown">Formulario </a>
 					</li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</nav>
 
-		<section class="panel">
+		<section class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
 			<article class="panel panel-primary" >
-				<div class="panel-heading">
-					WorldWideWeb
+				<div class="panel-heading" role="tab" id="primary">
+					<h4 class="panel-title">
+						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#www" aria-expanded="true" aria-controls="www">
+							WorldWideWeb
+						</a>
+					</h4>
 				</div>
-  				<div class="panel-body">
-  					Representa la información accesible globalmente a través de la red de internet
-  				</div>
+				<div id="www" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+	  				<div class="panel-body">
+	  					Representa la información accesible globalmente a través de la red de internet
+	  				</div>
+	  			</div>
 			</article>
+
 			<article class="panel panel-success" >
-				<div class="panel-heading">
-					Componentes:
+				<div class="panel-heading" role="tab" id="success">
+					<h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#componentes" aria-expanded="false" aria-controls="componentes">
+							Componentes:
+						</a>
+					</h4>
 				</div>
-  				<div class="panel-body">
-  					<ul>
-  						<li>
-  							Hardware 
-  							<ul>
-  								<li>
-  									Los componentes físicos de Internet (hubs, repetidores, pasarelas…)
-								</li>
-  							</ul> 
-						</li>
-						<li>
-							Software
-							<ul>
-								<li>
-									Los protocolos de comunicaciones (http, IP, FTP…)
-								</li>
-								<li>
-									Otros(DNS (nombres de dominio) y software especifico)
-								</li>
-							</ul>
-						</li>
-  					</ul>
-  				</div>
+				<div id="componentes" class="panel-collapse collapse" role="tabpanel" aria-labelledby="success">
+	  				<div class="panel-body">
+	  					<ul>
+	  						<li>
+	  							Hardware 
+	  							<ul>
+	  								<li>
+	  									Los componentes físicos de Internet (hubs, repetidores, pasarelas…)
+									</li>
+	  							</ul> 
+							</li>
+							<li>
+								Software
+								<ul>
+									<li>
+										Los protocolos de comunicaciones (http, IP, FTP…)
+									</li>
+									<li>
+										Otros(DNS (nombres de dominio) y software especifico)
+									</li>
+								</ul>
+							</li>
+	  					</ul>
+	  				</div>
+	  			</div>
 			</article>
 
 			<article class="panel panel-info" >
-				<div class="panel-heading">
-					Configuración arquitectónica más habitual
+				<div class="panel-heading" role="tab" id="info">
+					<h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#confi" aria-expanded="false" aria-controls="confi">
+							Configuración arquitectónica más habitual
+						</a>
+					</h4>
 				</div>
-  				<div class="panel-body">
-  					<ul>
-  						<li>
-  							<strong>Servidor: </strong>
-  							<small>es un proceso proveedor de servicios</small>
-  						</li>
-  						<li>
-  							<strong>Cliente:</strong> 
-  							<small>Cliente es un componente consumidor de servicios</small>
-  							<ul>
-  								<li>
-  									<strong>¿QUE ES?</strong>
-  									<ul>
-		  								<li>
-		  									El componente mas habitual del cliente es el Navegador Web
-		  								</li>
-		  								<li>
-		  									<strong>Componente software</strong> que se utiliza en el cliente y que permite acceder al contenido ofrecido por los servidores de Internet sin la necesidad de que el usuario instale un nuevo programa
-		  								</li>
-		  								<li>
-		  									<strong>Aplicación</strong>, distribuida habitualmente como software libre, que permite a un usuario acceder (y, normalmente, visualizar) a un recurso publicado por un servidor Web a través de Internet y descrito mediante una dirección URL (Universal ResourceLocator
-		  								</li>
-	  								</ul>
-								</li>
-								<li>
-									<strong>TIPOS DE CLIENTE:</strong>
-									<ul>
-										<li>
-											<strong>Clientes ligeros o livianos: </strong>
-											<br> Que por sí solo no pueden realizar ninguna operación real, nada más que conectarse con el servidor.
+				<div id="confi" class="panel-collapse collapse" role="tabpanel" aria-labelledby="info">
+	  				<div class="panel-body">
+	  					<ul>
+	  						<li>
+	  							<strong>Servidor: </strong>
+	  							<small>es un proceso proveedor de servicios</small>
+	  						</li>
+	  						<li>
+	  							<strong>Cliente:</strong> 
+	  							<small>Cliente es un componente consumidor de servicios</small>
+	  							<ul>
+	  								<li>
+	  									<strong>¿QUE ES?</strong>
+	  									<ul>
+			  								<li>
+			  									El componente mas habitual del cliente es el Navegador Web
+			  								</li>
+			  								<li>
+			  									<strong>Componente software</strong> que se utiliza en el cliente y que permite acceder al contenido ofrecido por los servidores de Internet sin la necesidad de que el usuario instale un nuevo programa
+			  								</li>
+			  								<li>
+			  									<strong>Aplicación</strong>, distribuida habitualmente como software libre, que permite a un usuario acceder (y, normalmente, visualizar) a un recurso publicado por un servidor Web a través de Internet y descrito mediante una dirección URL (Universal ResourceLocator
+			  								</li>
+		  								</ul>
+									</li>
+									<li>
+										<strong>TIPOS DE CLIENTE:</strong>
+										<ul>
+											<li>
+												<strong>Clientes ligeros o livianos: </strong>
+												<br> Que por sí solo no pueden realizar ninguna operación real, nada más que conectarse con el servidor.
 
-										</li>
-										<li>
-											<strong>Clientes complejos:  </strong>
-											<br>Son los utilizados actualmente. Utilizan lenguajes como Java o DHTML para aumentar funcionalidades  y flexibilizar al usuario. Además de conectarse al servidor son capaces de procesar o sincronizar datos.
+											</li>
+											<li>
+												<strong>Clientes complejos:  </strong>
+												<br>Son los utilizados actualmente. Utilizan lenguajes como Java o DHTML para aumentar funcionalidades  y flexibilizar al usuario. Además de conectarse al servidor son capaces de procesar o sincronizar datos.
 
-										</li>
-									</ul>
-								</li>
-  							</ul>
-  						</li>
-  						<li>
-  							<strong>ACTIVIDADES</strong>
-  							<ul>
-  								<li>
-  									<a href="trabajos/actividad01.pdf" target="_blank">
-  										Actividad 1: Evolución y caracteristicas de los navegadores
-  									</a>
-  								</li>
-  								<li>
-  									<a href="trabajos/actividad02.pdf" target="_blank">
-  										Actividad 2: Comparación de navegadores
-  									</a>
-  								</li>
-  							</ul>
-  						</li>
+											</li>
+										</ul>
+									</li>
+	  							</ul>
+	  						</li>
+	  						<li>
+	  							<strong>ACTIVIDADES</strong>
+	  							<ul>
+	  								<li>
+	  									<a href="trabajos/actividad01.pdf" target="_blank">
+	  										Actividad 1: Evolución y caracteristicas de los navegadores
+	  									</a>
+	  								</li>
+	  								<li>
+	  									<a href="trabajos/actividad02.pdf" target="_blank">
+	  										Actividad 2: Comparación de navegadores
+	  									</a>
+	  								</li>
+	  							</ul>
+	  						</li>
 
-  					</ul>
-  				</div>
+	  					</ul>
+	  				</div>
+	  			</div>
 			</article>
 
 			<article class="panel panel-warning" >
-				<div class="panel-heading">
-					Criterios de clasificación: 
+				<div class="panel-heading" role="tab" id="warning">
+					<h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#criterios" aria-expanded="false" aria-controls="criterios">
+							Criterios de clasificación: 
+						</a>
+					</h4>
 				</div>
-  				<div class="panel-body">
-  					<ul>
-  						<li>
-  							<strong>Plataforma de ejecución</strong>
-							<br>
-							Es el SO donde pueden ejecutarse los navegadores
-  						</li>
-  						<li>
-  							<strong>Características del navegador</strong>
-  							<br>
-  							Son funcionalidades adicionales asociadas a la experiencia del usuario a la hora de navegar (sin instalar extensiones), como, administración de marcadores,  gestores de descarga, almacenamiento de contraseñas y datos de formularios, herramientas de búsqueda,  etc....
-  						</li>
-  						<li>
-  							<strong>Personalización de la interfaz</strong>
-  							<br>
-  							Son las funciones que ayudan a usuario en la navegación y la accesibilidad.. como son: navegación por pestañas, bloqueadores de ventas emergentes, la visualización de formatos de ficheros (PDF), opciones de zoom, funciones avanzadas de búsqueda, etc..
+				<div id="criterios" class="panel-collapse collapse" role="tabpanel" aria-labelledby="warning">
+	  				<div class="panel-body">
+	  					<ul>
+	  						<li>
+	  							<strong>Plataforma de ejecución</strong>
+								<br>
+								Es el SO donde pueden ejecutarse los navegadores
+	  						</li>
+	  						<li>
+	  							<strong>Características del navegador</strong>
+	  							<br>
+	  							Son funcionalidades adicionales asociadas a la experiencia del usuario a la hora de navegar (sin instalar extensiones), como, administración de marcadores,  gestores de descarga, almacenamiento de contraseñas y datos de formularios, herramientas de búsqueda,  etc....
+	  						</li>
+	  						<li>
+	  							<strong>Personalización de la interfaz</strong>
+	  							<br>
+	  							Son las funciones que ayudan a usuario en la navegación y la accesibilidad.. como son: navegación por pestañas, bloqueadores de ventas emergentes, la visualización de formatos de ficheros (PDF), opciones de zoom, funciones avanzadas de búsqueda, etc..
 
-  						</li>
-  						<li>
-  							<strong>Soporte de tecnologías Web</strong>
-  							<br>
-  							Indica los tipos de lenguajes o tecnologías que soportan o son capaces de ejecutar, estos lenguajes son, CSS, Java, lenguajes de script del cliente (JavaScript),  RSS o Atom (sindicación de contenidos), XHTML (HTML con formato XML), etc..
-  						</li>
-  						<li>
-  							<strong>Licencia de software</strong>
-  							<br>
-  							Hay en el mercado navegadores de codigo libre como, Mozilla Firefox o Google Chrome. Y navegadores propietarios como Internet Explorer o Safari. Generalmente todos son gratuitos, aunque hay excepciones como OmniWeb.
+	  						</li>
+	  						<li>
+	  							<strong>Soporte de tecnologías Web</strong>
+	  							<br>
+	  							Indica los tipos de lenguajes o tecnologías que soportan o son capaces de ejecutar, estos lenguajes son, CSS, Java, lenguajes de script del cliente (JavaScript),  RSS o Atom (sindicación de contenidos), XHTML (HTML con formato XML), etc..
+	  						</li>
+	  						<li>
+	  							<strong>Licencia de software</strong>
+	  							<br>
+	  							Hay en el mercado navegadores de codigo libre como, Mozilla Firefox o Google Chrome. Y navegadores propietarios como Internet Explorer o Safari. Generalmente todos son gratuitos, aunque hay excepciones como OmniWeb.
 
-  						</li>
-  						<li>
-  							<a href="trabajos/actividad03.pdf" target="_blank">
-  								Actividad 3: Navegador Opera
-  							</a>
-  						</li>
-  					</ul>
-  				</div>
+	  						</li>
+	  						<li>
+	  							<a href="trabajos/actividad03.pdf" target="_blank">
+	  								Actividad 3: Navegador Opera
+	  							</a>
+	  						</li>
+	  					</ul>
+	  				</div>
+	  			</div>
 			</article>
 			<article class="panel panel-danger" >
-				<div class="panel-heading">
-					Arquitectura del navegador
+				<div class="panel-heading"  role="tab" id="danger">
+					<h4 class="panel-title">
+        				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#arqui" aria-expanded="false" aria-controls="arqui">
+        					Arquitectura del navegador
+						</a>
+        			</h4>
 				</div>
-  				<div class="panel-body">
-  					<img src="../../img/arquitectura.jpg" class="img-responsive" alt="Arquitectura de ejecución ">
-  					<ul>
-  						<li>
-  							<strong>Interfaz de usuario</strong>
-							<br>
-							Es la capa que actúa de interfaz entre el usuario y el motor del buscador. <small> Incluye funcionalidades como la barra de direcciones, el botón de avance/retroceso, el menú de marcadores, etc. (en general, todas las partes visibles del navegador, excepto la ventana principal donde se muestra la página solicitada).</small> En algunos casos puede comunicarse con el SO para el manejo de sesiones de usuario o el almacenamiento de preferencias de visualización y configuración.
+				<div id="arqui" class="panel-collapse collapse" role="tabpanel" aria-labelledby="danger">
+	  				<div class="panel-body">
+	  					<img src="../../img/t1-arquitectura-01.jpg" class="img-responsive" alt="Arquitectura de ejecución ">
+	  					<ul>
+	  						<li>
+	  							<strong>Interfaz de usuario</strong>
+								<br>
+								Es la capa que actúa de interfaz entre el usuario y el motor del buscador. <small> Incluye funcionalidades como la barra de direcciones, el botón de avance/retroceso, el menú de marcadores, etc. (en general, todas las partes visibles del navegador, excepto la ventana principal donde se muestra la página solicitada).</small> En algunos casos puede comunicarse con el SO para el manejo de sesiones de usuario o el almacenamiento de preferencias de visualización y configuración.
 
-  						</li>
-  						<li>
-  							<strong>Motor de búsqueda</strong>
-							<br>
-							Coordina las acciones entre la interfaz y el motor de renderización. Su función principal es la de cargar una dirección (URL),  soportar los mecanismos de navegación (ir página anterior, posterior o recarga). También gestiona las alertas de JavaScript, el proceso de carga de la página y la administración de las preferencias de ejecución del motor de renderización.
-  						</li>
-  						<li>
-  							<strong>Motor de renderización</strong>
-							<br>
-							es responsable de mostrar el contenido solicitado, ya que interpreta código de la pagina web. Por ejemplo, si el contenido solicitado es HTML, será el responsable de analizar el código HTML y CSS y de mostrar el contenido analizado en la pantalla. Este modulo establece las dimensiones exactas de cada elemento a mostrar  y a veces se encarga de posicionarlos en la página
-  						</li>
-  						<li>
-  							<strong>Comunicaciones o Red</strong>
-							<br>
-							es responsable de las llamadas de red, como las solicitudes HTTP, FTP... Tiene una interfaz independiente de la plataforma y realiza implementaciones en segundo plano para cada plataforma. Se encarga de codificar los datos obtenidos en función de su tipo (texto, audio, video). A veces (según navegadores ) almacena una cache para de elementos accedidos recientemente.
+	  						</li>
+	  						<li>
+	  							<strong>Motor de búsqueda</strong>
+								<br>
+								Coordina las acciones entre la interfaz y el motor de renderización. Su función principal es la de cargar una dirección (URL),  soportar los mecanismos de navegación (ir página anterior, posterior o recarga). También gestiona las alertas de JavaScript, el proceso de carga de la página y la administración de las preferencias de ejecución del motor de renderización.
+	  						</li>
+	  						<li>
+	  							<strong>Motor de renderización</strong>
+								<br>
+								es responsable de mostrar el contenido solicitado, ya que interpreta código de la pagina web. Por ejemplo, si el contenido solicitado es HTML, será el responsable de analizar el código HTML y CSS y de mostrar el contenido analizado en la pantalla. Este modulo establece las dimensiones exactas de cada elemento a mostrar  y a veces se encarga de posicionarlos en la página
+	  						</li>
+	  						<li>
+	  							<strong>Comunicaciones o Red</strong>
+								<br>
+								es responsable de las llamadas de red, como las solicitudes HTTP, FTP... Tiene una interfaz independiente de la plataforma y realiza implementaciones en segundo plano para cada plataforma. Se encarga de codificar los datos obtenidos en función de su tipo (texto, audio, video). A veces (según navegadores ) almacena una cache para de elementos accedidos recientemente.
 
-  						</li>
-  						<li>
-  							<strong>Intérprete de JavaScript</strong>
-							<br>
-							permite analizar y ejecutar el código JavaScript. Este modulo puede ser configurado (incluso deshabilitado) por cuestiones de seguridad. Dependiendo de las tecnologías soportadas por los navegadores puede ser que existan interpretes específicos de otros lenguajes como Applets de java ,AJAX o ActionScript
-  						</li>
-  						<li>
-  							<strong>Parser XML</strong>
-							<br>
-							En este módulo los navegadores suelen cargar en memoria una representación en árbol (árbol DOM) de la página para poder acceder a los diferentes elementos mas rápido por parte del navegador
-  						</li>
-  						<li>
-  							<strong>Servidor de la interfaz o componentes de visualización</strong>
-							<br>
-							Este módulo ofrece funcionalidades relacionadas con la visualización de los contenidos. Ofrece primitivas de dibujo y posicionamiento en una ventana permite presentar widgets básicos( como ventanas y cuadros combinados) y un conjunto de fuentes tipográficas. Utiliza métodos de la interfaz de usuario del sistema operativo en segundo plano
-  						</li>
-  						<li>
-  							<strong>Almacenamiento de datos</strong>
-							<br>
-							es una capa de persistencia o almacén de datos para los diferentes módulos del navegador.  El navegador necesita guardar todo tipo de datos en el disco duro (por ejemplo, las cookies, o certificados de seguridad). La nueva especificación de HTML (HTML5) define el concepto de "base de datos web", que consiste en una completa (aunque ligera) base de datos del navegador
-  						</li>
-  						<li>
-  							<a href="trabajos/actividad04.pdf" target="_blank">
-  								Actividad 4: Motores de renderización 
-  							</a>
-  						</li>
-  					</ul>
+	  						</li>
+	  						<li>
+	  							<strong>Intérprete de JavaScript</strong>
+								<br>
+								permite analizar y ejecutar el código JavaScript. Este modulo puede ser configurado (incluso deshabilitado) por cuestiones de seguridad. Dependiendo de las tecnologías soportadas por los navegadores puede ser que existan interpretes específicos de otros lenguajes como Applets de java ,AJAX o ActionScript
+	  						</li>
+	  						<li>
+	  							<strong>Parser XML</strong>
+								<br>
+								En este módulo los navegadores suelen cargar en memoria una representación en árbol (árbol DOM) de la página para poder acceder a los diferentes elementos mas rápido por parte del navegador
+	  						</li>
+	  						<li>
+	  							<strong>Servidor de la interfaz o componentes de visualización</strong>
+								<br>
+								Este módulo ofrece funcionalidades relacionadas con la visualización de los contenidos. Ofrece primitivas de dibujo y posicionamiento en una ventana permite presentar widgets básicos( como ventanas y cuadros combinados) y un conjunto de fuentes tipográficas. Utiliza métodos de la interfaz de usuario del sistema operativo en segundo plano
+	  						</li>
+	  						<li>
+	  							<strong>Almacenamiento de datos</strong>
+								<br>
+								es una capa de persistencia o almacén de datos para los diferentes módulos del navegador.  El navegador necesita guardar todo tipo de datos en el disco duro (por ejemplo, las cookies, o certificados de seguridad). La nueva especificación de HTML (HTML5) define el concepto de "base de datos web", que consiste en una completa (aunque ligera) base de datos del navegador
+	  						</li>
+	  						<li>
+	  							<a href="trabajos/actividad04.pdf" target="_blank">
+	  								Actividad 4: Motores de renderización 
+	  							</a>
+	  						</li>
+	  					</ul>
+	  				</div>
   				</div>
 			</article>
 
