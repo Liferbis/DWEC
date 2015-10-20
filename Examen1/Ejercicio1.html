@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ejercicio 1</title>
+
+		
+	</head>
+	<body>
+		<script type="text/javascript">
+			aux=0;
+			 texto="";
+			function multiplica(){
+				for(var i = 0; i <= 10; i++){
+					
+					document.write("<pre>   7 x "+i+" = "+(i*7)+"</prer>");
+				}
+				
+			}
+
+			function suma(){
+				var aux = 0;
+				while(aux<=10){
+					document.write("<pre>   8 + "+aux+" = "+(aux+8)+"</prer>");
+					aux++;
+				}
+				
+			}
+
+			function dividir(){
+				var aux = 0;
+				do{
+					document.write("<pre>   9 / "+aux+" = "+(9/aux)+"</prer>");
+					aux++;
+				}while(aux<=10);
+			}
+			document.write("<h1>Ejercicio 1 realizado por: Lidia Fernández Fernandez</h1> ");
+			document.write("<h1>Tabla de multiplicar del 7:</h1>");
+			multiplica();
+			document.write("<h1>Tabla de sumar del 8:</h1>");
+			suma();
+			document.write("<h1>Tabla de dividir del 9:</h1>");
+			dividir();
+		</script>
+
+	</body>
+</html>

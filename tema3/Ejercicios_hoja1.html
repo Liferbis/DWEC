@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+
+		
+	</head>
+	<body>
+		<script type="text/javascript">
+		/*  EJERCICIO 1:
+			Script que permita mostrar el siguiente texto en una ventana emergente, a través de la función alert():
+		 */
+			//			alert("I'm = I am \nI don't = I do not \n'Esto es una prueba de utilización de ‘SECUENCIAS DE ESCAPE’ ' ");
+			//			
+		//*************************************************//
+		/*  EJERCICIO 2:
+			Realizar un script que de como resultado en pantalla lo siguiente utilizando un ciclo for
+		 */
+			// var texto="";
+			// for (var i=0 ; i <= 10; i++) {
+			// 	texto+="El número es "+i+"</br>";
+			// };
+			// document.write("<h3>"+texto+"</h3>");
+			
+		//*************************************************//
+
+		/*  EJERCICIO 3:
+			Crea un script que determine si un número introducido por el usuario es par:		
+		 */
+			// var texto = "";
+			// var aux=0;
+			
+			// do{
+			// 	var num= prompt("Introduce un numero");
+			// 	if (isFinite(num)){
+			// 		aux=0;
+			// 		parseInt(num);
+			// 		num%2 == 0 ? texto= "Es un numero par" :
+			// 		texto="Es un numero impar";
+			// 	}else{
+			// 		aux=1;
+			// 	}
+			// }while(aux != 0);
+			
+			// alert(texto);
+			
+		//*************************************************//
+
+		/*  EJERCICIO 4
+			Realiza un script que nos pida números por teclado hasta que no introduzcamos nada o demos a cancelar.
+			
+			Después nos visualice la cantidad de números que hemos introducido
+		*/
+			// var numeros=0;
+			// while(numero =  prompt("Introduce un numero \n Pulsa cancelar cuando quieras salir")){
+			// 	if(isFinite(numero)){
+			// 		numeros++;
+			// 	}
+			// }
+
+			// document.write("<h3>Se han introducido "+numeros+" numeros</h3>");
+			
+		//*************************************************//
+
+		/*  EJERCICIO 5
+			El factorial de un número entero n es una operación matemática que consiste en multiplicar todos los factores n x (n-1) x (n-2) x ... x 1. Así, el factorial de 5 (escrito como 5!) es igual a: 5! = 5 x 4 x 3 x 2 x 1 = 120
+			
+			Utilizando la estructura for, crear un script que calcule el factorial de un número entero
+
+		*/
+var fac=1;
+var aux=0;
+var texto="";
+
+do{
+	var num = prompt("Introduce un número");
+	if(isFinite(num)){
+		alert(num)
+		num==null || num=="" ? aux= 1 :
+		aux=0;
+		for(var n=num; n>=1; n--){
+			fac=fac*n;
+			n==1 ? texto+=n :
+			texto+=n+"x";
+		}
+			
+	}else{
+		aux=1;
+	}
+
+}while(aux != 0);
+
+document.write("<p>El factorial de "+num+" es: "+texto+" = "+fac+"</p>");
+
+			
+			
+			
+			
+		
+		</script>
+
+		
+	</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ejercicio 2 </title>
+
+	</head>
+	<body>
+
+		<h1 class="text-center">Ejercicio 2 realizado por: Lidia Fernández Fernandez</h1>
+	<script>
+		function inicio(){
+			var aux=0;
+			var num=0;
+			var jugar = confirm("¿Quieres jugar?");
+			
+			if (jugar) {
+				num = prompt("Introduce un número del 1 al 100");
+				do{
+					if(isFinite(num)){
+						num==null || num=="" ? aux= 1 :
+						aux=0;
+						if(num>=1 & num<=100){
+							var secreto=false;
+							var contador=0;
+							
+							do{								
+								var jugador = prompt("2º jugador: Introduce un número para adivinar el número secreto");
+								if(isFinite(jugador)){
+									
+									if( jugador==null || jugador=="") {
+										contador++;
+										alert("Debes introducir un numero que este dentro del rango del 1 al 100");
+										secreto=false;
+									}else if(jugador<1 || jugador>100){
+										contador++;
+										alert("El numero introducido NO esta dentro del rango (recuerda del 1 al 100)");
+										secreto=false;
+									}else{
+
+										if(jugador == num){
+											aux=0;
+											secreto=true;
+											document.write("<h1>Has acertado!!! con un total de :"+contador+" intentos</h1>");
+										}else{
+											contador++;
+											secreto=false;
+											if(jugador < num){
+												alert("El número es mayor del introducido ( "+jugador+" )");
+
+													
+											}else{
+												alert("El número es menor del introducido ( "+jugador+" )");
+											
+											}
+										}	
+									}	
+								}else{
+									contador++;
+									alert("El numero introducido no esta dentro del rango (recuerda del 1 al 100)");
+									secreto=false;
+								}
+
+							}while(secreto != true);
+
+
+						}else{
+							aux=1;
+						}
+							
+					}else{
+						aux=1;
+					}
+
+				}while(aux != 0);
+
+			}
+		}
+		inicio();
+		
+			
+			
+			
+		
+		</script>
+		
+	</body>
+</html>
