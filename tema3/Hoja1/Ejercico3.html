@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ejercicio 3</title>
+
+		
+	</head>
+	<body>
+		<script type="text/javascript">
+		/* 
+		EJERCICIO 3:
+			Crea un script que determine si un número introducido por el usuario es par:		
+		 */
+			var texto = "";
+			var aux=0;
+			
+			do{
+				var num= prompt("Introduce un numero");
+				if (isFinite(num)){
+					aux=0;
+					parseInt(num);
+					num%2 == 0 ? texto= "Es un numero par" :
+					texto="Es un numero impar";
+				}else{
+					aux=1;
+				}
+			}while(aux != 0);
+			
+			alert(texto);
+
+		</script>
+				
+	</body>
+</html>

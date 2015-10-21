@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ejercicio 6</title>
+
+		
+	</head>
+	<body>
+		<script type="text/javascript">
+		/*  
+		EJERCICIO 6
+			Usar el confirm para entrar en la página si no quiere entrar se cierra y si acepta le pedimos la contraseña con prompt. Introducir la contraseña correcta (usando while), hasta que no introduzcamos la contraseña correcta no nos permite seguir
+
+		*/	
+
+		var jugar = confirm("¿Quieres jugar?");
+		correcto=0;
+		if (jugar) {
+			do {
+				num = prompt("Introduce la contraseña");
+				if(num == "12345"){
+					document.write("Contraseña correcta!");
+					correcto=0;
+				}else{
+					correcto=1;
+				}
+			}while (correcto!=0);
+			
+		}else{
+			document.close();
+		}	
+		</script>
+				
+	</body>
+</html>

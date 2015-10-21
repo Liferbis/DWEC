@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ejercicio 4</title>
+
+		
+	</head>
+	<body>
+		<script type="text/javascript">
+		/*  
+		EJERCICIO 4
+			Realiza un script que nos pida números por teclado hasta que no introduzcamos nada o demos a cancelar.
+			
+			Después nos visualice la cantidad de números que hemos introducido
+		*/
+			var numeros=0;
+			while(numero =  prompt("Introduce un numero \n Pulsa cancelar cuando quieras salir")){
+				if(isFinite(numero)){
+					numeros++;
+				}
+			}
+
+			document.write("<h3>Se han introducido "+numeros+" numeros</h3>");
+		</script>
+				
+	</body>
+</html>

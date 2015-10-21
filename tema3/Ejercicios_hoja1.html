@@ -71,37 +71,118 @@
 			Utilizando la estructura for, crear un script que calcule el factorial de un número entero
 
 		*/
-var fac=1;
-var aux=0;
-var texto="";
+			// var fac=1;
+			// var aux=0;
+			// var texto="";
 
-do{
-	var num = prompt("Introduce un número");
-	if(isFinite(num)){
-		alert(num)
-		num==null || num=="" ? aux= 1 :
-		aux=0;
-		for(var n=num; n>=1; n--){
-			fac=fac*n;
-			n==1 ? texto+=n :
-			texto+=n+"x";
-		}
-			
-	}else{
-		aux=1;
-	}
+			// do{
+			// 	var num = prompt("Introduce un número");
+			// 	if(isFinite(num)){
+			// 		alert(num)
+			// 		num==null || num=="" ? aux= 1 :
+			// 		aux=0;
+			// 		for(var n=num; n>=1; n--){
+			// 			fac=fac*n;
+			// 			n==1 ? texto+=n :
+			// 			texto+=n+"x";
+			// 		}
+						
+			// 	}else{
+			// 		aux=1;
+			// 	}
 
-}while(aux != 0);
+			// }while(aux != 0);
 
-document.write("<p>El factorial de "+num+" es: "+texto+" = "+fac+"</p>");
+			// document.write("<p>El factorial de "+num+" es: "+texto+" = "+fac+"</p>");
 
+	//*************************************************//
+
+		/*  EJERCICIO 6
+			Usar el confirm para entrar en la página si no quiere entrar se cierra y si acepta le pedimos la contraseña con prompt. Introducir la contraseña correcta (usando while), hasta que no introduzcamos la contraseña correcta no nos permite seguir
+
+		*/	
+
+		// var jugar = confirm("¿Quieres jugar?");
+		// correcto=0;
+		// if (jugar) {
+		// 	do {
+		// 		num = prompt("Introduce la contraseña");
+		// 		if(num == "12345"){
+		// 			document.write("Contraseña correcta!");
+		// 			correcto=0;
+		// 		}else{
+		// 			correcto=1;
+		// 		}
+		// 	}while (correcto!=0);
 			
+		// }else{
+		// 	document.close();
+		// }	
+	//*************************************************//
+
+		/*  EJERCICIO 7
+			Crea un script que pida al usuario dos números y una operación que puede ser el carácter  de suma , resta , mutiplicación o división y que muestre el resultado de la operación. Utilizar swItch Y VALIDAR la entrada de los números
+
+		*/
+
+		// num1 = prompt("Introduce el numero 1");
+		// num2 = prompt("Introduce el numero 2");
+		// var operacion;
+		// operacion = prompt("Elige una opcion:\n \t1-Suma  \n \t2-resta\n \t3-mutiplicación\n \t4-división", "1 , 2 , 3  o 4");
+
+		// switch (operacion)
+		// {
+		//     case ("1"||"suma"):
+		// 		resultado=parseInt(num1)+parseInt(num2);
+		//         document.write("<h1>Suma: "+resultado+"</h1>");
+		//         break;
+		//     case "2":
+		//         resultado=parseInt(num1)-parseInt(num2)
+		//         document.write("<h1>Resta: "+resultado+"</h1>");
+		//         break;
+		//     case "3":
+		//         resultado=parseInt(num1)*parseInt(num2)
+		//         document.write("<h1>Mutiplicación: "+resultado+"</h1>");
+		//         break;
+		//     case "4":
+		//         resultado=parseInt(num1)/parseInt(num2)
+		//         document.write("<h1>División: "+resultado+"</h1>");
+		//         break;
+		//     default:
+		//     	document.write("<h1>NO HAS ELEGIDO UNA OPCION CORRECTA!</h1>");
+		//         break;
+		// }
+
+	//*************************************************//
+
+		/*  EJERCICIO 8
+			Realizar un script que nos de cómo resultado 
+			**tabla de numeros del 1 al 100 con filas de 10**
+
+		*/	
+
+		var c=1;
+
+		document.write("<table border='1'>");
+
+		for (var i = 0; i <10; i++) {
+			document.write("<tr>");
+
+			for (var a = 0; a <10; a++) {
+				document.write("<td>"+c+"</td>");
+				c++;
+			}
+
+			document.write("</tr>");
 			
-			
+		};
+		document.write("</tr></table>");
+		
 			
 		
 		</script>
 
 		
+				
 	</body>
 </html>

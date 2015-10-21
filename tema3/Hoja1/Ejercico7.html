@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ejercicio 7</title>
+
+		
+	</head>
+	<body>
+		<script type="text/javascript">
+		/*  
+
+		EJERCICIO 7
+			Crea un script que pida al usuario dos números y una operación que puede ser el carácter  de suma , resta , mutiplicación o división y que muestre el resultado de la operación. Utilizar swItch Y VALIDAR la entrada de los números
+
+		*/
+
+		num1 = prompt("Introduce el numero 1");
+		num2 = prompt("Introduce el numero 2");
+		var operacion;
+		operacion = prompt("Elige una opcion:\n \t1-Suma  \n \t2-resta\n \t3-mutiplicación\n \t4-división", "1 , 2 , 3  o 4");
+
+		switch (operacion)
+		{
+		    case "1":
+				resultado=parseInt(num1)+parseInt(num2);
+		        document.write("<h1>Suma: "+resultado+"</h1>");
+		        break;
+		    case "2":
+		        resultado=parseInt(num1)-parseInt(num2)
+		        document.write("<h1>Resta: "+resultado+"</h1>");
+		        break;
+		    case "3":
+		        resultado=parseInt(num1)*parseInt(num2)
+		        document.write("<h1>Mutiplicación: "+resultado+"</h1>");
+		        break;
+		    case "4":
+		        resultado=parseInt(num1)/parseInt(num2)
+		        document.write("<h1>División: "+resultado+"</h1>");
+		        break;
+		    default:
+		    	document.write("<h1>NO HAS ELEGIDO UNA OPCION CORRECTA!</h1>");
+		        break;
+		}
+		</script>
+				
+	</body>
+</html>

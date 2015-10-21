@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ejercicio 8</title>
+
+		
+	</head>
+	<body>
+		<script type="text/javascript">
+		/*  
+		EJERCICIO 8
+			Realizar un script que nos de cómo resultado 
+			**tabla de numeros del 1 al 100 con filas de 10**
+
+		*/	
+
+		var c=1;
+
+		document.write("<table border='1'>");
+
+		for (var i = 0; i <10; i++) {
+			document.write("<tr>");
+
+			for (var a = 0; a <10; a++) {
+				document.write("<td>"+c+"</td>");
+				c++;
+			}
+
+			document.write("</tr>");
+			
+		};
+		document.write("</tr></table>");
+		
+		</script>
+				
+	</body>
+</html>
