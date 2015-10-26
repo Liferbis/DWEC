@@ -29,10 +29,11 @@ function validarEntrar(entrar){
 }
 
 function PideNum(){
+	var correcto;
 	do {
 		ctvUsu = prompt("Introduce la contraseña");
 		contr=siEs(ctvUsu);
-		if(contr==0){
+		if(contr){
 			correcto=0;
 			mostrar();
 		}else{
@@ -44,9 +45,9 @@ function PideNum(){
 
 function siEs(ctvUsu){
 	if(ctvUsu == ctvMia){
-		correcto=0;
+		return true;
 	}else{
-		correcto=1;
+		return false;
 	}
 }
 
