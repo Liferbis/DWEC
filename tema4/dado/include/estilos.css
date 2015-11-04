@@ -1,0 +1,45 @@
+*{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-align: center;
+	background: #07CBF2;
+}
+
+#myImagen{
+	border-radius: 28px;
+}
+
+.bot{
+	background: ;
+}
+
+.fuera{
+	background: #D8D8D8;
+	border-radius: 50px;
+	font-size: 12px;
+	color:#999;
+}
+
+.botones{
+	float;
+	background: #999;
+	font-size: 14px;
+	color:yellow;
+	padding: 10px;
+	border-radius: 50px;
+	text-decoration: none;
+}
+
+.botones:hover{
+	background: #999;
+	font-size: 14px;
+	color:black;
+	text-decoration: none;
+	border-radius: 15px;
+}
+.botones:active{
+	background: #999;
+	font-size: 14px;
+	color:white;
+	text-decoration: none;
+	border-radius: 40px;
+}

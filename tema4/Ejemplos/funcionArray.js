@@ -1,5 +1,6 @@
 var longi;
 var a = new Array();
+var ar=[1,30,4,5,8,12,15];
 
 function introducir(){
 	var validar;
@@ -105,4 +106,49 @@ function addin(){
 
 		botonVolver();
 	}
+}
+
+function extraerValores(ar){
+	
+	document.write("<h3>Array original: ");
+	for(variable in ar){
+		document.write( ar[variable] + ", ");
+	}
+	document.write("</h3>");
+	aux=ar.slice(3,5);
+	document.write("<h3>Datos extraidos: ");
+	for(variable in aux){
+		document.write( ar[variable] + ", ");
+	}
+	document.write("</h3>");
+	botonVolver();
+}
+
+function ordenarArray(ar){
+	
+	document.write("<h3>Array original: ");
+	for(variable in ar){
+		document.write( ar[variable] + ", ");
+	}
+	document.write("</h3>");
+	
+	document.write("<h3>Ordenado de menor a mayor: ");
+	ar.sort(function(a,b){
+		return a-b
+	});
+	for(variable in ar){
+		document.write( ar[variable] + ", ");
+	}
+	document.write("</h3>");
+
+	document.write("<h3>Ordenado de mayor a menor: ");
+	ar.sort(function(a,b){
+		return b-a
+	});
+	for(variable in ar){
+		document.write( ar[variable] + ", ");
+	}
+	document.write("</h3>");
+	document.write("<p>*En caso de haber sido un array de string solo seria ar.sort();</p>");
+	botonVolver();
 }
