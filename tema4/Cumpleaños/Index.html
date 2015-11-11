@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="ES">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,7 @@
 
 		<script src="funciones.js">
 		</script>
+		<link rel="stylesheet" href="estilo.css">
 	</head>
 	<body>
 		<header id="tit">
@@ -23,6 +24,26 @@
 				</p>
 				<button class="botones" type="button" id="enviar" onclick="enviarDatos()">Enviar!!</button>
 				<p onclick="mostrarTodo()">Mostrar todos los cumpleaños</p>
+				<p onclick="mostrarMes()">Mostrar todos los cumpleaños de un mes en concreto</p>
+				<p>
+					<select oninput="mymes()" id="me" >
+						<option value="Enero">Enero</option>
+						<option value="Febrero">Febrero</option>
+						<option value="Marzo">Marzo</option>
+						<option value="Abril">Abril</option>
+						<option value="Mayo">Mayo</option>
+						<option value="Junio">Junio</option>
+						<option value="Julio">Julio</option>
+						<option value="Agosto">Agosto</option>
+						<option value="Septiembre">Septiembre</option>
+						<option value="Octubre">Octubre</option>
+						<option value="Noviembre">Noviembre</option>
+						<option value="Diciembre">Diciembre</option>
+					</select>
+				</p>
+				
+			</article>
+			<article>
 				<p id="tabla"></p>
 			</article>
 			

@@ -1,0 +1,58 @@
+body{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background: #FFFDE9;
+}
+
+#tit{
+	text-align: center;
+}
+
+#contenedor{
+	margin: 0 auto;
+	width: 85%;
+	text-align: center;
+}
+
+#cues{
+	margin: 0 auto;
+	width: 40%;
+	float: left;
+}
+
+#cues p{
+	border: solid 1px #FCD758;
+	background: #FFFDCB;
+	color: #F93;
+}
+
+#cues select{
+	border: solid 1px #FCD758;
+	background: #FFFDCB;
+	color: #F93;
+}
+
+#tabla{
+	float: right;
+}
+
+.tabla{
+	border: solid 2px #FCD758;
+}
+
+.tabla thead{
+	background: #F93;
+	color: #FFFDCB;
+}
+
+.tabla tbody{
+	background: #FFFDCB;
+	color: #F93;
+}
+
+.tabla th{
+	border: solid 1px;
+}
+
+.tabla td{
+	border: solid 1px;
+}

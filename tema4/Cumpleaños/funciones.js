@@ -1,7 +1,8 @@
 
-var Meses = ["Enero", "Febrero", "Marzo", "Abril",	"Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+var Meses =new Array();
 var nom;
 var fe;
+var mesB;
 var persona = new Array();
 var cumpleanos = new Array();
 
@@ -60,26 +61,64 @@ function dentro(){
 }
 
 function enviarDatos(){
+	var texto;
 	if(nom=="" && fe ==""){
-		alert("HAY DATOS ÇINCORRECTOS O VACIOS!!\n No se guarda ningun dato!!");
+		texto="<table class='tabla'><thead><tr><th>HAY DATOS INCORRECTOS O VACIOS!!\n No se guarda ningun dato!!</th></tr></thead></table>";
 	}else{
 		persona = [fe , nom];
 		cumpleanos.push(persona);
-		alert("Introducido correctamente!!");
+		texto="<table class='tabla'><thead><tr><th>Introducido correctamente!!</th></tr></thead></table>";
 		fuera();
 		nom = "";
 		fe = "";
 	}
+	document.getElementById('tabla').innerHTML = texto;
 }
 
 function mostrarTodo(){
-	var texto= "<table class='tabla'><thead><tr><th>Mes</th><th>Nombre</th></tr></thead><tbody>";
-	for(variable in cumpleanos){
-		texto += "<tr>";
-		for (var i = 0; i < cumpleanos[variable].length; i++) {
-			texto += "<td>" + cumpleanos[variable][i] + "</td>";
-		};
-		texto += "</tr>";
+	var texto;
+	if(cumpleanos.length == 0){
+		texto="<table class='tabla'><thead><tr><th>No hay ningun cumpleaños</th></tr></thead></table>";
+	}else{
+		texto= "<table class='tabla'><thead><tr><th>Mes</th><th>Nombre</th></tr></thead><tbody>";
+		for(variable in cumpleanos){
+			texto += "<tr>";
+			for (var i = 0; i < cumpleanos[variable].length; i++) {
+				texto += "<td>" + cumpleanos[variable][i] + "</td>";
+			};
+			texto += "</tr>";
+		}
 	}
+	
 	document.getElementById('tabla').innerHTML = texto;
+}
+
+function mostrarMes(){
+	var contador=0;
+	var texto;
+	if(mesB== undefined){
+		texto="<table class='tabla'><thead><tr><th>Debe seleccionar el mes para poder mostrar datos... </th></tr></thead></table>";
+	}else{
+		texto= "<table class='tabla'><thead><tr><th>Mes</th><th>Nombre</th></tr></thead><tbody>";
+		for(variable in cumpleanos){
+			texto += "<tr>";
+			for (var i = 0; i < cumpleanos[variable].length; i++) {
+				if(cumpleanos[variable][i] == mesB){
+					contador++;
+					texto += "<td>" + cumpleanos[variable][i] + "</td>";
+					texto += "<td>" + cumpleanos[variable][i+1] + "</td>";
+				}
+			};
+			texto += "</tr>";
+		}
+		if(contador == 0){
+			texto="<table class='tabla'><thead><tr><th>En el mes de " + mesB + " no hay ningun cumpleaños</th></tr></thead></table>";
+		}
+	}
+	
+	document.getElementById('tabla').innerHTML = texto;
+}
+
+function mymes(){
+	mesB = document.getElementById("me").value;
 }
