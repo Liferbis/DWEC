@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ES">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ejercicio 1</title>
+
+		<script src="disco.js">
+		</script>
+		<script src="funciones.js">
+		</script>
+		<link rel="stylesheet" href="estilo.css">
+	</head>
+	<body>
+		<header id="tit">
+			<h3>Array y objetos</h3>
+			<h1>Discos!!</h1>
+		</header>
+		<section id="contenedor">
+			<article id="cues">
+				<p onclick="introducir()">Introduce un nuevo disco</p>
+				
+				<p id="disc">
+					<input type="text" id="nombre" oninput="myTitulo()" placeholder="Titulo">
+					<input type="text" id="grupo" oninput="myGrupo()" placeholder="Grupo">
+					<input type="date" id="fecha" oninput="myFunction()" >
+				</p>
+
+				<button class="botones" type="button" id="enviar" onclick="Gdatos()">Guardar!!</button>
+				<p onclick="mostrarTodo()">Mostrar toda la Musica</p>
+				
+				
+				
+			</article>
+			<article>
+				<p id="respuesta"></p>
+			</article>
+			
+		</section>
+
+		
+	</body>
+</html>
