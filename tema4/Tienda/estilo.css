@@ -12,16 +12,19 @@ body{
 	width: 80%;
 	text-align: center;
 }
+
 #cues{
 	margin: 0 auto;
 	width: 40%;
 	float: left;
 }
+
 #cues p{
 	border: solid 1px #FCD758;
 	background: #FFFDCB;
 	color: #F93;
 }
+
 #tabla{
 	float: right;
 }

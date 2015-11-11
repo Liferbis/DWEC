@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cumpleaños</title>
+
+		<script src="funciones.js">
+		</script>
+	</head>
+	<body>
+		<header id="tit">
+			<h3>Array asociativo-multidimensional</h3>
+			<h1>Cumpleaños</h1>
+		</header>
+		<section id="contenedor">
+			<article id="cues">
+				<p onclick="introducir()">Introduce un nuevo cumpleaños</p>
+				<p id="person">
+					<input type="text" id="nombre" oninput="myNombre()" >
+					<input type="date" id="fecha" oninput="myFunction()" >
+				</p>
+				<button class="botones" type="button" id="enviar" onclick="enviarDatos()">Enviar!!</button>
+				<p onclick="mostrarTodo()">Mostrar todos los cumpleaños</p>
+				<p id="tabla"></p>
+			</article>
+			
+		</section>
+	</body>
+</html>
