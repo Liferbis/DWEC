@@ -2,6 +2,7 @@ var musica = new Array();
 var tit;
 var gru;
 var fe;
+var dn;
 
 addEventListener('load', carga, false);
 
@@ -53,12 +54,13 @@ function introducir(){
 }
 
 function Gdatos(){
+	fuera();
 	var texto;
 	if(tit == "" || fe == "" || gru == ""){
 		texto="<h3 class='resM'>HAY DATOS INCORRECTOS O VACIOS!! <br> No se guarda ningun dato!!</h3>";
 	}else{
-		var d = new Disco(tit, gru, fe);
-		musica.push(d);
+		dn = new Disco(tit, gru, fe);
+		musica.push(dn);
 		texto="<h3 class='resB'>Introducido correctamente!!</h3>";
 		fuera();
 		tit = "";
@@ -70,13 +72,14 @@ function Gdatos(){
 }
 
 function mostrarTodo(){
+	fuera();
 	var texto;
 	if(musica.length == 0){
 		texto="<h3 class='resM'>No tienes musica!!</h3>";
 	}else{
 		
 		for(variable in musica){
-			texto= "<p class='resB'>";
+			texto += "<p class='resB'>";
 			texto += musica[variable].ver();
 			texto += "</p>";
 		}

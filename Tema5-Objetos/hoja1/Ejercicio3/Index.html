@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ES">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Edificio</title>
+		
+		<link href="estilo.css" rel="stylesheet">
+
+		<script src="edificio.js">
+		</script>
+		<script src="funciones.js">
+		</script>
+	</head>
+	<body>
+		<header id="tit">
+			<h3>Array y objetos</h3>
+			<h1>Edificio!!</h1>
+		</header>
+		<section id="contenedor">
+			<article id="cues">
+				<p onclick="crea()">Crear edificio</p>
+				<p onclick="cons()">Contruir edificio</p>
+				<p onclick="pro()">Propietario</p>
+				<p id="edificio">
+					<input type="text" id="calle" oninput="mycalle()" placeholder="Calle">
+					<input type="text" id="numero" oninput="myNum()" placeholder="Numero">
+					<input type="text" id="CP" oninput="myCP()" placeholder="Código Postal">
+					<button class="botones" type="button" id="envia" onclick="paso1()">Crear edificio!!</button>
+				</p>
+
+				<p id="plantas">
+					<input type="text" id="plantas" oninput="myplanta()" placeholder="Numero de plantas">
+					<input type="text" id="puerta" oninput="mypuerta()" placeholder="Numero de puerta">
+					<button class="botones" type="button" id="enviar" onclick="paso2()">Contruir edificio!!</button>
+				</p>
+
+				<p id="prop">
+					<input type="text" id="calle" oninput="mycalle()" placeholder="Calle">
+					<input type="text" id="numero" oninput="myNum()" placeholder="Numero">
+					<input type="text" id="planta" oninput="myplanta()" placeholder="Planta">
+					<input type="text" id="puerta" oninput="mypuerta()" placeholder="Puerta">
+					<input type="text" id="name" oninput="myName()" placeholder="Numbre del propietario">
+					<button class="botones" type="button" id="envia" onclick="paso3()">Guarda propietario!!</button>
+				</p>
+
+				<p onclick="Imprim()">Imprimir Plantas</p>
+				<!-- <p onclick="mostrarUS()">Mostrar usuario y saldo</p> -->
+			</article>
+			<article id="respuesta">
+				
+			</article>
+			
+		</section>
+
+	</body>
+</html>

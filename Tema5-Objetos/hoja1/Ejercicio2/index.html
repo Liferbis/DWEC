@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ES">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ejercicio 1</title>
+		
+		<script src="persona.js">
+		</script>
+		<script src="Cuentacorriente.js">
+		</script>
+		<script src="funciones.js">
+		</script>
+
+		<link rel="stylesheet" href="estilo.css">
+	</head>
+	<body>
+		<header id="tit">
+			<h3>Array y objetos</h3>
+			<h1>Cuenta corriente!!</h1>
+		</header>
+		<section id="contenedor">
+			<article id="cues">
+				<p onclick="introducir()">Insertar dinero</p>
+				<p id="dinero">
+					<input type="text" id="saldo" oninput="mySaldo()" placeholder="Saldo">
+					<input type="text" id="person" oninput="myPer()" placeholder="Persona">
+					<button class="botones" type="button" id="enviar" onclick="Idatos()">Insertar dinero!!</button>
+					<button class="botones" type="button" id="retira" onclick="Rdatos()">Retirar dinero!!</button>
+				</p>
+
+				
+				<p onclick="mostrarTodo()">Mostrar todos los usuarios</p>
+				<p onclick="mostrarUS()">Mostrar usuario y saldo</p>
+
+
+				
+				
+				
+			</article>
+			<article id="respuesta">
+				
+			</article>
+			
+		</section>
+
+		
+	</body>
+</html>
