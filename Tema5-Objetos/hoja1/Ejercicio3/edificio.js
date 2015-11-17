@@ -22,19 +22,22 @@ function AProp(planta, puerta, nombre){
 }
 
 function Imprime(){
-	var texto="";
+	var texto="<br><strong> PLANTA-BAJA </strong><br> <**> Porteria <br><**> Buzones <br><**> Ascensor <br>";;
 	for(variable in this.plantas){
-		texto +="<br>Planta: " + Number(variable);
+		texto +="<br><strong> PLANTA : " + (Number(variable)+1) + "</strong><br>";
 		for(var i = 0; i < this.plantas[variable].length; i++){
-			texto +="Puerta: " + (i+1) + "Propietario: " + (this.plantas[variable][i]);
-			
+			if(this.plantas[variable][i] == undefined){
+				texto +=" <**> Puerta: " + (i+1) + " Propietario: -Ninguno-</br>";
+			}else{
+				texto +=" <**> Puerta: " + (i+1) + " Propietario: " + (this.plantas[variable][i]) + " </br>";
+			}
 		}
-		
+		texto += " </ul>";
 	}
 	return texto;
 }
 
 function muestra() { 
-	var cadena = "Calle: <br>" + this.calle +"Número: <strong>" + this.numero + " </strong><br> Código Postal: <strong>"+ this.cp + "</strong>";
+	var cadena = "Calle: <strong>" + this.calle + "</strong><br>Número: <strong>" + this.numero + " </strong><br> Código Postal: <strong>"+ this.cp + "</strong>";
 	return(cadena); 
 }

@@ -24,6 +24,14 @@ function mycalle(){
 	c = document.getElementById("calle").value;
 }
 
+function myca(){
+	c = document.getElementById("ca").value;
+}
+
+function myN(){
+	num = Number(document.getElementById("nu").value);
+}
+
 function myNum(){
 	num = Number(document.getElementById("numero").value);
 }
@@ -33,11 +41,19 @@ function myCP(){
 }
 
 function myplanta(){
-	p = Number(document.getElementById("plantas").value);
+	p = Number(document.getElementById("planta").value);
+}
+
+function mypl(){
+	p = Number(document.getElementById("pl").value);
 }
 
 function mypuerta(){
 	pu = Number(document.getElementById("puerta").value);
+}
+
+function mypu(){
+	pu = Number(document.getElementById("p").value);
 }
 
 function myName(){
@@ -117,5 +133,38 @@ function paso3(){
 }
 
 function Imprim(){
+	fuera();
+	var texto="";
+	if(edificios.length == 0){
+		texto="<h3 class='resM'>No tienes edificios!!</h3>";
+	}else{
+		
+		for(variable in edificios){
+			texto += "<p class='resB'>";
+			texto += edificios[variable].Imprime();
+			texto += "</p>";
+		}
 
+	}
+	
+	document.getElementById('respuesta').innerHTML = texto;
+}
+
+function MostrarTodo(){
+	fuera();
+	var texto="";
+	if(edificios.length == 0){
+		texto="<h3 class='resM'>No tienes edificios!!</h3>";
+	}else{
+		
+		for(variable in edificios){
+			texto += "<p class='resB'>";
+			texto += edificios[variable].ver();
+			texto += edificios[variable].Imprime();
+			// texto += "</p>";
+		}
+
+	}
+	
+	document.getElementById('respuesta').innerHTML = texto;
 }
