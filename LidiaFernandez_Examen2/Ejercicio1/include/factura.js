@@ -17,12 +17,12 @@ function AgregarElementos(descripcion, precio, cantidad){
 
 function CalculaFactura(){
 	var aux=0;
-	var precioT;
+	var precioT=0;
 	var iv=this.infor.IVA;
 	for(variable in this.linea){
 		aux=(Number(this.linea[variable][1])*iv)*0.1;
 		aux = aux*(this.linea[variable][2]);
-		precioT += Number(aux); 
+		precioT = Number(aux); 
 	}
 	this.infor.importeT=precioT;
 }
