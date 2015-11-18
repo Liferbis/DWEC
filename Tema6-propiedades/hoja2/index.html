@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hoja 1</title>
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+		<script src="funciones.js">
+		</script>
+	</head>
+	<body>
+		<header id="tit">
+			<h1>Propiedades Sting</h1>
+		</header>
+		<section id="contenedor">
+			<article id="cues">
+				<p onclick="crea()">Insertar cadena de mas de 10 caracteres</p>
+				<p id="caden">
+					<input type="text" id="cad" oninput="myCad()" placeholder="Cadena">
+					<button class="botones" type="button" id="crea" onclick="cons()">Crear cadena!!</button>
+				</p>
+				<p id="bot">
+					<button class="botones" type="button" id="div" onclick="div()">Dividir en frases</button>
+					<button class="botones" type="button" id="mos" onclick="mos()">Mostrar frases</button>
+					<button class="botones" type="button" id="nu" onclick="nu()">Numero de frases</button>
+					<button class="botones" type="button" id="extP" onclick="extP()">Extraer palabras de las frases</button>
+					<button class="botones" type="button" id="maxL" onclick="maxL()">¿qué frase es la más larga?</button>
+					<button class="botones" type="button" id="efrase" onclick="efrase()">Deletreo</button>
+					
+				</p>
+			</article >
+
+			<article id="respuesta">
+				
+			</article>
+
+		</section>
+
+	</body>
+</html>
