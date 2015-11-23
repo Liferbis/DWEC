@@ -29,8 +29,43 @@ body{
 	float: right;
 }
 
-.resM{
+.empresa{
+	width: 50%;
+	float: left;
+
+}
+
+.cliente{
+	width: 50%;
+	float: right;
+}
+
+.infor{
+	margin-top: 15px;
+	border: groove #F93;
+	width: 50%;
+	float: left;
+}
+
+.im{
+	margin-top: 50px;
 	width: 40%;
+	float: right;
+}
+
+.im img{
+	width: 250px;
+}
+
+.prod{
+	border: groove #F90;
+	margin-top: 50px;
+	width: 100%;
+	text-align: center;
+	float: left;
+}
+.resM{
+	width: 100%;
 	float: right; 
 	background: #FFFDCB;
 	color: #000;
@@ -38,17 +73,53 @@ body{
 }
 
 .resB{
-	width: 40%;
+	width: 100%;
 	float: right;
 	background: #FFFDCB;
 	color: #F93;
 	border: solid 2px #FCD758;
 }
 
-.respuesta{
+#respuesta{
+	margin-top: 10px;
 	width: 100%;
+	float: left;
+	display: block;
+}
+
+.respuesta{
+	border:dashed #F93;
+	width: 100%;
+	float: left;
 	display: block;
 	background: #FFFDCB;
 	color: #F93;
 	border: solid 2px #FCD758;
+}
+
+.botones{
+	float;
+	background: #F93;
+	font-size: 14px;
+	color:#FFFDCB;
+	padding: 10px;
+	border-radius: 18px;
+	border-style:groove;
+	border-color: #F90;
+	text-decoration: none;
+}
+
+.botones:hover{
+	background: #FFFDCB;
+	font-size: 14px;
+	color:#F93;
+	text-decoration: none;
+	border-radius: 15px;
+}
+.botones:active{
+	background: #FFFDCB;
+	font-size: 14px;
+	color:#FCD758;
+	text-decoration: none;
+	border-radius: 15px;
 }
