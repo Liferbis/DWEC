@@ -76,6 +76,7 @@ function maxL(){
 	var an = 0;
 	for(var i = 0; i < frase.length; i++){
 		if(an < frase[i].length){
+			an = frase[i].length;
 			aux = frase[i];
 			posicion = i;
 		}		
@@ -119,4 +120,11 @@ function del(){
 }
 			
 		
-	
+function eifrase(){
+	var texto = "<strong>" + palabra + "</strong><table class='table'><thead><tr><th>Posición</th><th>Letra</th></tr></thead><tbody>";
+	for (var i = (palabra.length-1); i >= 0 ; i--) {
+		texto += "<tr><td>" + i + "</td><td>" + palabra.charAt(i) + "</td></tr>"; 
+	}
+	texto += "</tbody></table>";
+	document.getElementById('respuesta').innerHTML = texto;
+}
