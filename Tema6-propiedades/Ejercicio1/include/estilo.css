@@ -1,0 +1,41 @@
+body{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background: #FFFDE9;
+}
+
+#tit{
+	text-align: center;
+}
+
+#contenedor{
+	margin: 0 auto;
+	width: 85%;
+	text-align: center;
+}
+
+#cues p{
+	border: solid 1px #FCD758;
+	background: #FFFDCB;
+	color: #F93;
+}
+
+.TT{
+	text-align: center;
+	color: #000;
+	font-size: 1.5em;
+}
+
+.resM{
+	font-size: 2em;
+	background: #FFFDCB;
+	color: #000;
+	border: solid 2px #990000;
+}
+
+.resB{
+	margin: 0 auto;
+	width: 40%;
+	background: #FFFDCB;
+	color: #F93;
+	border: solid 2px #FCD758;
+}
