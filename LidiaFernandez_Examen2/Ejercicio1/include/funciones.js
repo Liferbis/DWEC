@@ -45,6 +45,8 @@ function myC(){
 }
 
 function ag(){
+	document.getElementById('respuesta').innerHTML = " ";
+
 	document.getElementById("datos").removeAttribute('hidden');
 }
 
@@ -61,7 +63,7 @@ function agrega(){
 		texto +="<li>" + fac[i].empresa.nombreE + " </li>";			
 	}
 
-	texto += "</ol></br>Introduce el número de la factura:</br><input type=number id='fra' min='1' max='" + fac.length + "' oninput='myFact()' placeholder='Número de la factura'><button class='botones' type='button' id='Agr' onclick='agre()'>Introduce datos!!</button>";
+	texto += "</ol></br>Introduce el número de la factura:</br><input type=number id='fra' min='1' max='" + fac.length + "' oninput='myFact()' placeholder='Número de la factura'><button class='botones' type='button' id='Agr' onclick='ag()'>Introduce datos!!</button>";
 	document.getElementById('respuesta').innerHTML = texto;
 }
 
@@ -97,11 +99,12 @@ function mostrar(){
 }
 
 function vr(){
-	var texto =" ";
+	var texto ="<article class='resB'><ul> ";
 	for(var i = 0; i < fac.length; i++){
-		texto="<h3 class='resB'>Precio Total factura(" + (i+1) +"):  ";
+		texto +="<li >Precio Total factura(" + (i+1) +") correspondiente a la empresa '" + fac[i].empresa.nombreE + "':  ";
 	 	texto += fac[i].ver();
-	 	texto += "  !!</h3>";
+	 	texto += " € !!</li>";
 	}
+	texto += "  !!</ul></article>";
 	document.getElementById('respuesta').innerHTML = texto;
 }
