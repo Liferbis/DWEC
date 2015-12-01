@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ejercicio 4</title>
+
+		
+		<link href="estilo.css" rel="stylesheet">
+
+
+		<script src="funciones.js"></script>
+		<script src="ClasFecha.js"></script>
+	</head>
+	<body>
+		<header id="tit">
+			<h1>Clase Undefined!</h1>
+		</header>
+		<section id="contenedor">
+			<section id="cues">
+				<article class="im">
+					<img src="sabiendo.jpg">
+				</article>
+				<article class="cu" onclick="trans()">
+					Pulse para Transformar de una unidad de tiempo a otra
+				</article>
+				
+				<article id="formar">
+					<form action="" name="fuR">
+						<input type="number" name="nu" >
+						<select name="sele">
+							<option value="milS">
+								De milisegundos a Segundos
+							</option>
+							<option value="milM">
+								De milisegundos a Minutos
+							</option>
+							<option value="milH">
+								De milisegundos a Horas
+							</option>
+							<option value="milD">
+								De milisegundos a Dias
+							</option>
+							<option value="milA">
+								De milisegundos a Años
+							</option>
+							<option value="Smili">
+								De Segundos a milisegundos
+							</option>
+							<option value="Mmili">
+								De Minutos a milisegundos
+							</option>
+							<option value="Hmili">
+								De Horas a milisegundos
+							</option>
+							<option value="Dmili">
+								De Dias a milisegundos
+							</option>
+							<option value="Amili">
+								De Años a milisegundos
+							</option>
+						</select>
+											
+						<button class="botones" type="button" onclick="resta()">CALCULA!!</button>
+					</form>
+				</article>
+				
+			</section >
+			<br>
+			<section id="respuesta">
+				
+			</section>
+
+		</section>
+	</body>
+</html>

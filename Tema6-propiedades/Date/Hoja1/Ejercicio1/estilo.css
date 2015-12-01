@@ -1,0 +1,21 @@
+body{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background: #FFFDE9;
+}
+
+#tit{
+	text-align: center;
+}
+
+#contenedor{
+	margin: 0 auto;
+	width: 85%;
+	text-align: center;
+}
+.resB{
+	margin: 0 auto;
+	width: 40%;
+	background: #FFFDCB;
+	color: #F93;
+	border: solid 2px #FCD758;
+}

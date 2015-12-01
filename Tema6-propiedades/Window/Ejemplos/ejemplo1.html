@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Window</title>
+
+		<script type="text/javascript">
+			var myWindow;
+
+			function ar(){
+				for(var i = 0; i < 5; i++){			
+					myWindow= window.open(" xxx " , " " , "width=500,height=200,scrollbars=NO");
+					var texto="<html><head><title>Ventana "+ i+"</title></head><body><h1>" + i + "</h1><p>Lista:</p><ul><li>uno</li><li>dos</li><li>tres</li></ul><button onclick='window.close()'>Cerrar ventana</button></body></html>";
+
+					myWindow.document.write(texto);
+				}
+			}
+			function closeWin() {
+			    myWindow.close();
+			}
+		</script>
+		
+	</head>
+	<body>
+		<h1 >Hello World</h1>
+		<button onclick="ar()">Abrir nueva ventana</button>
+		<button onclick="closeWin()">Cerrar ventana</button>
+		
+		
+	</body>
+</html>

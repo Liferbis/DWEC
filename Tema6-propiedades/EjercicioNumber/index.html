@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Number</title>
+
+   <link href="estiloscajas.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+   <script src="funciones.js"></script>
+</head>
+<body>
+   <h1 class="text-center">Ejercicio Number</h1>
+
+   <h1>El objeto Number, métodos y propiedades.</h1>
+
+   <h3>Instrucción Number()</h3>
+   <div id="caja1"></div>
+   <form action="#" name="numero">
+      <p><input type="text" name="valor1" /> Escribe un valor para el objeto Number</p>
+      <p><input type="button" onclick="miNumber()" value="ver Number" /></p>
+   </form>
+
+   <h3>Método isNaN()</h3>
+   <div id="caja2"></div>
+   <form action="#" name="comprobar">
+      <p><input type="text" name="valor2" /> Escribe un valor para comprobar si es un número con isNaN</p>
+      <p><input type="button" onclick="comprueba()" value="ver isNaN" /></p>
+   </form>
+
+   <h3>Método parseInt</h3>
+   <div id="caja3"></div>
+   <form action="#" name="cambiaBase">
+      <p><input type="text" name="valor3" /> Escribe un número en base 2, 8 o 16.</p>
+      <p>El número está escrito en la siguiente base:</p>
+      <input type="radio" name="base" value="2" /> base 2 &nbsp;&nbsp;
+      <input type="radio" name="base" value="8" /> base 8 &nbsp;&nbsp;
+      <input type="radio" name="base" value="16" /> base 16 
+      <p><input type="button" onclick="cambia()" value="ver parseInt" /></p>
+   </form>
+
+   <h3>Método toFixed</h3>
+   <div id="caja4"></div>
+   <form action="#" name="redondeo">
+      <p><input type="text" name="valor4" /> Escribe un número para redondear con toFixed</p>
+      <p><input type="text" name="decimal" /> Escribe la cifra de decimales que quieres que tenga
+         (máximo 8)</p>
+      <p><input type="button" onclick="redondear()" value="ver toFixed" /></p>
+   </form>
+   
+   <h3>Ver propiedades</h3>
+   <div id="caja5"></div>
+   <p onclick="propiedades()"> Pulsa en este párrafo para ver las propiedades del objeto Number.</p>
+</body>
+</html>
+
