@@ -1,0 +1,56 @@
+*{
+	background: grey;
+	text-align: center;
+}
+
+#reloj{
+	width: 150px;
+	padding: 0;
+	margin: 0;
+	position: fixed ;
+	right: 10px;
+	background: #C0C0C0;
+	color:#000;
+
+}
+
+h1{
+	/*background: #C0C0C0;*/
+	color: #DE207F;
+	text-shadow: 2px 1.5px #000;
+}
+
+h3{
+	/*background: #C0C0C0;*/
+	color: #FFF;
+	text-shadow: 2px 1.5px #000;
+}
+
+#visor, figure{
+	width: 100%;
+	height: 320px;
+	background: #C0C0C0;
+}
+#myImagen{
+	background: #C0C0C0;
+}
+
+.botones{
+	float;
+	background: #DE207F;
+	font-size: 1.5em;
+	color:#FFF;
+	padding: 10px;
+	border-radius: 50px;
+	text-decoration: none;
+	text-shadow: 2px 2px #000;
+}
+.animalito{
+	width: 300px;
+	height: 300px;
+}
+
+.im{
+	width: 8%;
+	height: 8%;
+}

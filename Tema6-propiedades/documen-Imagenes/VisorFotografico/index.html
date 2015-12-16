@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Visor de Imagenes</title>
+
+		
+		<link href="include/estilo.css" rel="stylesheet">
+		<script src="include/funciones.js"></script>
+	</head>
+	<body>
+		<article id="reloj">
+			
+		</article>
+		<h1>Visor Fotográfico</h1>
+		<h3>Lidia Fernández Fernández</h3>
+		<article id="carrusel">
+			<img class="im" onclick="wind(1)" src="include/imagenes/img1.png" alt="1"> 
+			<img class="im" onclick="wind(2)" src="include/imagenes/img2.png" alt="2"> 
+			<img class="im" onclick="wind(3)" src="include/imagenes/img3.png" alt="3">
+			<br> 
+			<img class="im" onclick="wind(4)" src="include/imagenes/img4.png" alt="4"> 
+			<img class="im" onclick="wind(5)" src="include/imagenes/img5.png" alt="5"> 
+			<img class="im" onclick="wind(6)" src="include/imagenes/img6.png" alt="6">
+			<br>
+			<img class="im" onclick="wind(7)" src="include/imagenes/img7.png" alt="7">
+			<img class="im" onclick="wind(8)" src="include/imagenes/img8.png" alt="8">
+			<img class="im" onclick="wind(9)" src="include/imagenes/img9.png" alt="9">
+		</article>
+		<hr>
+		<article>
+			<button class="botones" type="button" id="j" onclick="atras()"><<</button>
+			<button class="botones" type="button" id="j" onclick="parar()">|·|</button>
+			<button class="botones" type="button" id="j" onclick="sigue()">>></button>
+		</article>
+		<article id="visor">
+			<figure>
+				<img id="myImagen" src="">
+			</figure>
+			<article id="respuesta"></article>
+		</article>
+
+	<!-- <button onclick=""></button> -->
+	</body>
+
+</html>

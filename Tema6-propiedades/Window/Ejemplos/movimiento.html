@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Window</title>
+
+		<script type="text/javascript">
+			var myWindow;
+			var movi; 
+			
+			addEventListener('load', carga, false);
+
+			function carga(){
+				ar();
+			}
+
+			function ar(){
+				myWindow= window.open(" xxx " , " " , "width=500,height=200,scrollbars=NO");
+				
+				var texto="<html><head><title>Ventana </title></head><body><h1></h1><p>Lista:</p><ul><li>uno</li><li>dos</li><li>tres</li></ul><button onclick='window.close()'>Cerrar ventana</button></body></html>";
+
+					myWindow.document.write(texto);
+
+				movi = setInterval( "moverse()", 2000);
+			}
+
+			function moverse(){
+				var x = Math.floor((Math.random() * 1024) + 0) ;
+				var y = Math.floor((Math.random() * 850) + 0) ;
+				
+				myWindow.moveTo( x, y );
+			}
+
+			function para() {
+				clearInterval(movi);
+			    myWindow.close();
+			}
+
+
+		</script>
+		
+	</head>
+	<body>
+		<h1 >Hello World</h1>
+		<button onclick="para()">Parar</button>
+		
+		
+	</body>
+</html>

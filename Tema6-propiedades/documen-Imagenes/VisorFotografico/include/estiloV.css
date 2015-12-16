@@ -1,0 +1,14 @@
+*{
+	background: grey;
+	text-align: center;
+}
+
+.botones{
+	float;
+	background: #DE207F;
+	font-size: 1.5em;
+	color:#FFF;
+	padding: 10px;
+	border-radius: 50px;
+	text-decoration: none;
+}

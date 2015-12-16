@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Window</title>
+
+		<script type="text/javascript">
+			var myWindow;
+			var movi; 
+			var a = 0;
+			var w2 =  Number(window.innerHeight);
+			var w1 =  Number(window.outerHeight);
+			var aux = w1-200;
+			alert("w2: "+w2);
+			alert("w1: "+w1);
+			alert("aux: "+aux);
+			
+			
+
+			addEventListener('load', carga, false);
+
+			function carga(){
+				ar();
+			}
+
+			function ar(){
+				myWindow= window.open(" xxx " , " " , "width=300,height=200");
+				
+				var texto1="<html><head><title>Ventana </title></head><body><h1>ME CAIGOO!!! </h1></body></html>";
+
+					myWindow.document.write(texto1);
+				
+				movi = setInterval( "caida()", 10);
+			}
+
+			function caida(){	
+					
+				
+				if( a >= aux){
+					
+					var texto2="<html><head><title>Ventana </title></head><body><h1>llegO!</h1></body></html>";
+					myWindow.document.write(texto2);
+					clearInterval(movi);
+				}else{
+					myWindow.moveTo( 0, a );
+					a += 5;
+				}
+			}
+
+			function para() {
+				clearInterval(movi);
+			    myWindow.close();
+			}
+
+
+		</script>
+		
+	</head>
+	<body>
+		<h1 >Hello World</h1>
+		<button onclick="para()">Parar</button>
+		
+		
+	</body>
+</html>
