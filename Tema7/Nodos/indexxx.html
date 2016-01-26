@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Title Page</title>
+
+
+		 <script type="text/javascript">
+
+		// 	try{
+		// 		funcion();
+		// 	}catch(mierror){
+		// 		//controla que el navegador soporte el atributo descripcion
+		// 		if (mierror.description){
+		// 		      alert("Error detectado: " + mierror.description)
+		// 		   }else{
+		// 		      alert("Error detectado: " + mierror)
+		// 		   }
+		// 	}
+
+		// </script>
+
+		<script type="text/javascript">
+
+			// function checkInput(dato) {
+			// 	    try
+			// 	    {
+			// 	        if (isNaN(parseInt(dato))) {
+			// 	            throw new Error("Input no es un número.");
+			// 	        }
+			// 	    }
+			// 	    catch(mierror)
+			// 	    {
+			// 	        alert(mierror);
+			// 	    }
+			// 	}
+
+			// checkInput("not a number");
+
+		</script>
+
+		<script type="text/javascript">
+			var meses=["Enero","Febrero" , "Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+			
+			function mes(num){
+				try{
+					if(num<1){
+						throw new Error("No existen meses menores de 1 (Enero)");
+					}else if (num>meses.length){
+						throw new Error("No existen meses mayores de 12 (Diciembre)");
+					}else{
+						var aux=num-1;
+						alert(meses[aux]);
+					}
+				}catch(mierror){
+					if (mierror.description){
+				      alert("Error detectado: " + mierror.description)
+				   }else{
+				      alert("Error detectado: " + mierror)
+				   }
+				}
+			}
+	
+		</script>
+	</head>
+	<body>
+
+		<input type="number" name="numes" id="numes">
+		<input type="button" name="enviar" value="Enviar" onclick="mes(document.getElementById('numes').value);">
+
+	</body>
+</html>

@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#header{
+	background: #E0E0E0;
+	margin-top: 20px;
+	text-align: center;
+}
+
+body{
+	width: 100%;
+	float: left;
+	background: #A0A0A0;
+}
+
+#d1{
+	padding-top: 30px;
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+#d2{
+	padding-top: 30px;
+	width: 50%;
+	float: right;
+	text-align: center;
+}

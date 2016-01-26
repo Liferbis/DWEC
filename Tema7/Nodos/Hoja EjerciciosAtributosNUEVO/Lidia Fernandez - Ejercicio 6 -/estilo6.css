@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #e0e0e0;
+}
+
+#header{
+	text-align: center;
+	background: #a0a0a0;
+}
+
+#trabajo{
+	margin-top: 20px;
+	width: 100%;
+	float: left;
+}
+
+#uno{
+	text-align: center;
+	width: 45%;
+	float: left;
+	margin-left: 20px;
+	background: #C0C0C0;
+}
+
+#dos{
+	text-align: center;
+	width: 45%;
+	float: right;
+	margin-right: 20px;
+	background: #C0C0C0;
+}
+
+#tres{
+	text-align: justify;
+	background: #C0C0C0;
+	margin: 20px 20px 1px 20px;
+	float: left;
+}
+
+.titulo{
+	text-align: center;
+	font-weight: bold;
+}

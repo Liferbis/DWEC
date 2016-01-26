@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aprendiendo DOM</title>
+		<meta charset="utf-8">
+		<script>
+		addEventListener("load", listo);
+
+		function listo(){
+			
+		
+			//OBTENER DOCUMENTO RAIZ
+			var raiz=document.documentElement;
+			var texto= "El tipo de nodo raiz es: ";
+			texto += raiz.nodeType + " -- " + raiz.nodeName;
+			texto += "\nEl tipo del primer y último hijo de raíz: ";
+			texto += raiz.firstChild.nodeName + " y " + raiz.lastChild.nodeName;
+			texto += "\nEl numero hijos tiene el primer hijo de raíz: ";
+			texto += raiz.firstChild.childNodes.length;
+			texto += "\nEl numero hijos tiene el último hijo de raíz: ";
+			texto += raiz.lastChild.childNodes.length;
+			texto += "\nUtilizar el atajo para obtener el body.¿que tipo es? ";
+			texto += document.body.nodeType + " -- " + document.body.nodeName;
+			texto += "\nValor de atributos: ";
+
+			for (var i = 0; i < document.body.childNodes.length; i++) {
+				texto += "\n" + document.body.childNodes[i].nodeName;
+			};
+
+			alert(texto);
+		}
+	</script>
+	</head>
+	<body>
+		<p>
+			Parrafo numero 1
+		</p>
+		<p>
+			Parrafo numero 2
+		</p>
+		<p>
+			Parrafo numero pi
+		</p>
+	</body>
+	
+</html>
