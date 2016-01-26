@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Crea tu DIV</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="include/estilo.css" rel="stylesheet">
+
+		<script src="include/archivo.js"></script>
+			
+	</head>
+	<body>
+		<header id="header">
+			<h1>Crea tu DIV</h1>
+		</header>
+		
+		<section id="cuerpo">
+			<p id="cr" onclick="crear()">CREAR</p>
+			<p id="bo" onclick="borrar()">BORRAR</p>
+			<section id="crea">
+				Cuantos div quieres introducir 
+				<input type="number" id="ncrearcion" step="1" min="0">
+				<p id="c" onclick="crd()">Crea</p>
+			</section>
+
+			<section id="borra">
+				cuantos div quieres borrar 
+				<input type="number" step="1" min="0">
+				<p id="c" onclick="bo()">Crea</p>
+			</section>
+			<section id="divs">
+				
+			</section>
+
+		</section>
+	</body>
+</html>
