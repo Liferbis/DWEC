@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ejemplo parte 3</title>
+
+		<script type="text/javascript">
+			addEventListener("load", init);
+			var pos;
+
+			function init(){
+				pos = document.getElementById('posicion');
+
+			
+				pos.addEventListener('mousemove', function(e){
+					e.target.innerHTML = e.clientX + ' x - ' + e.clientY + ' y';
+				}, false);
+			}
+
+		</script>
+		<style>
+			#posicion{
+				height: 500px;
+			}
+		</style>
+	</head>
+	<body >
+	
+		<div id="posicion"> 
+		</div>
+		
+	</body>
+</html>

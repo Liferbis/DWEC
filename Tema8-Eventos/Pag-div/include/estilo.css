@@ -1,0 +1,33 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#header{
+	text-align: center;
+	background: #c0c0c0;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#botones{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.boton{
+	padding: 10px;
+	border: 1px solid #000;
+	background: #f91;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	width: 100px;
+
+}
+.esd{
+	text-align: center;
+	border: 1px solid #ff0000;
+	width: 100px;
+	height: 20px;
+}

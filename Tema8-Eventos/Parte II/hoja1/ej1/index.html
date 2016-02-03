@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ejemplo parte 2</title>
+		<SCRIPT TYPE="text/javascript">
+			var elemento;
+			var contenedor;
+
+			addEventListener("load", init);
+
+			function init(){
+				contenedor = document.getElementById('text');
+				//elemento es toda el html entero
+				elemento = document.documentElement;
+
+				elemento.addEventListener("click", mostrarBoton);
+
+				// si no funciona el secundario poner el contextmenu
+				//elemento.addEventListener("contextmenu", mostrarBoton);
+
+			}
+
+			function borraElementos(contenedor){
+				while( contenedor.childNodes.length > 0 ){
+					contenedor.removeChild(contenedor.childNodes[0]);
+				}
+			}
+			
+			function mostrarBoton(){
+				borraElementos(contenedor);
+				var texto =  " Se pulso en la coordenada ('x'): " + event.clientX;
+				texto +=  "\n Se pulso en la coordenada ('y'): " + event.clientY;
+
+
+				document.getElementById('text').appendChild(document.createTextNode(texto));
+			}
+</SCRIPT>
+	</head>
+	<body id="texto">
+		<h1>Ejercicio 1- hoja1- parte II</h1>
+		<section id="text">
+			
+		</section>
+	</body>
+</html>

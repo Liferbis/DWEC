@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ejemplo parte 3</title>
+
+		<script type="text/javascript">
+			addEventListener("load", init);
+
+			function init(){
+				var padre1 = document.getElementById('padre1');
+				var result= document.getElementById('resultado');
+
+				//con Target muestra ep padre que es el que tiene la accion pero tiene herencia y se la pasa a los hijos
+				padre1.addEventListener ('mouseover', function(e) {
+						result.innerHTML= "<br>Target: El desencadenador del evento \"MouseOver\" tiene la id: " + e.target.id 
+					}, true);
+
+				//currentTarget solo muestra el programado, en este caso padre1
+				padre1.addEventListener ('mouseover', function(e) {
+						result.innerHTML= "<br>CURRENTtarget: El desencadenador del evento \"MouseOver\" tiene la id: " + e.curretTarget.id 
+					}, true);
+			}
+
+		</script>
+	</head>
+	<body>
+		<p id="resultado"></p>
+		<div id="padre1">Padre
+			<div id="child1"> 
+				Niño N º 1 
+			</div>
+			<div id="child2"> 
+				Niño N °2 
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ejemplo parte 3</title>
+
+		<script type="text/javascript">
+			addEventListener("load", init);
+			var capt1;
+			var capt2;
+			var burb1;
+			var burb2;
+
+			function init(){
+				capt1 = document.getElementById ('capt1');
+				capt2 = document.getElementById ('capt2');
+
+				capt1.addEventListener ('click', function() {alert("El evento de div acaba de desencadenarse.");},true);
+				capt2.addEventListener ('click', function() {alert("El evento de span acaba de desencadenarse.");},true);
+
+
+				burb1 = document.getElementById ('burb1');
+				burb2 = document.getElementById ('burb2');
+				
+				burb1.addEventListener ('click', function() {alert("El evento de div acaba de desencadenarse.");},false);
+				
+				burb2.addEventListener('click', function() {alert("El evento de span acaba de desencadenarse.");},false);
+			}
+
+		</script>
+	</head>
+	<body>
+		<div id="capt1">
+			<span id="capt2">
+				Instrucciones para la fase de captura. 
+			</span>
+		</div>
+		<div id="burb1">
+			<span id="burb2">
+				Instrucciones para la fase de burbuja. 
+			</span>
+		</div>
+	</body>
+</html>

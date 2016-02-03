@@ -1,0 +1,37 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+#header{
+	background: #c0c0c0;
+	font-weight: bold;
+}
+
+#cuerpo{
+	margin: 10px auto 0px auto;
+}
+
+.tabla{
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid #c0c0c0;
+	border-radius: 15px;
+	background: #E2E2E2;
+}
+
+.tabla th {
+	border: 1px solid #c0c0c0;
+	border-radius: 15px;
+}
+
+.tabla td {
+	border: 1px solid #c0c0c0;
+	border-radius: 15px;
+}
+
+.respuesta{
+	background: #fff;
+	height: 20px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ejemplo parte 2</title>
+		<SCRIPT TYPE="text/javascript">
+			var elemento;
+			addEventListener("load", init);
+
+			function init(){
+				//elemento es toda el html entero
+				elemento = document.documentElement;
+
+				elemento.addEventListener("click", mostrarBoton);
+
+				// si no funciona el secundario poner el contextmenu
+				//elemento.addEventListener("contextmenu", mostrarBoton);
+
+
+				elemento.addEventListener("keydown", kd);
+				elemento.addEventListener("keypress", kp);
+				elemento.addEventListener("keyup", ku);
+			}
+
+			function mostrarBoton(){
+				var texto = "EVENTOS SOBRE RATON (click)";
+				texto = "<br>Se pulso el botón: " + event.button;
+				texto +=  "<br>Se pulso ('alt'): " + event.altKey;
+				texto +=  "<br>Se pulso ('ctrl'): " + event.ctrlKey;
+				texto +=  "<br>Se pulso ('shift'): " + event.shiftKey;
+				texto +=  "<br>Se pulso en la coordenada ('x'): " + event.clientX;
+				texto +=  "<br>Se pulso en la coordenada ('y'): " + event.clientY;
+
+
+				document.getElementById('text').innerHTML = texto;
+			}
+
+			function kd(){
+				var texto = "EVENTOS SOBRE TECLADO";
+				texto += "<br>KEYDOWN";
+				texto += "<br>Se pulso la tecla: " + event.keyCode;
+				texto +=  "<br>Se pulso la tecla: " + event.which;
+				document.getElementById('text').innerHTML = texto;
+			}
+			function kp(){
+				var texto = "KEYPRESS";
+				texto +=  "<br>Se pulso la tecla: " + event.keyCode;
+				texto +=  "<br>Se pulso la tecla: " + event.which;
+				document.getElementById('text').innerHTML = texto;
+			}
+			function ku(){
+				var texto = "KEYUP";
+				texto +=  "<br>Se pulso la tecla: " + event.keyCode;
+				texto +=  "<br>Se pulso la tecla: " + event.which;
+				document.getElementById('text').innerHTML = texto;
+			}
+
+
+		</SCRIPT>
+	</head>
+	<body id="texto">
+		<h1>Ejemplo parte II</h1>
+		<section id="text">
+			
+		</section>
+	</body>
+</html>

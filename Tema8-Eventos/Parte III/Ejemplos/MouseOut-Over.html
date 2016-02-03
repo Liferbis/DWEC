@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ejemplo parte 3</title>
+
+		<script type="text/javascript">
+			addEventListener("load", init);
+
+			function init(){
+				var child1 = document.getElementById('child1')
+				var child2 = document.getElementById('child2')
+				var result = document.getElementById('resultado');
+
+				child1.addEventListener ('mouseover', function(e) {
+					result.innerHTML= "El elemento de la izquierda justo antes del cursor, que no entra sobre el niño # 1 es: " + e.relatedTarget.id;
+				}, false);
+
+				child2.addEventListener ('mouseout', function(e) {
+					result.innerHTML= "El elemento volado inmediatamente después del cursor que ha dejado el niño # 2 es: "+ e.relatedTarget.id;
+				}, false);
+			}
+
+		</script>
+		<style>
+			#resultado{
+				border: 1px solid #000;
+				height: 250px;
+			}
+		</style>
+	</head>
+	<body >
+		<div id="padre1">
+			Padre: 1 
+			<br/>
+			Mouseoveren el niño
+			<div id="child1">
+				Niño N º 1 
+			</div>
+		</div>
+		<hr>
+		<div id="padre2">
+			Padre 2 
+			<br/>
+			Mouseouten el niño
+			<div id="child2">
+				Niño N °2 
+			</div>
+		</div>
+		<p id="resultado"> 
+		</p>
+	</body>
+</html>

@@ -18,19 +18,22 @@
 		</header>
 		
 		<section id="cuerpo">
-			<p id="cr" onclick="crear()">CREAR</p>
-			<p id="bo" onclick="borrar()">BORRAR</p>
+			<p id="botones">
+				<button type="button" id="cr" class="boton" onclick="crear()">CREAR</button>
+				<button type="button" id="bo" class="boton" onclick="borrar()">BORRAR</button>
+			</p>
+			
 			<section id="crea">
 				Cuantos div quieres introducir 
-				<input type="number" id="ncrearcion" step="1" min="0">
-				<p id="c" onclick="crd()">Crea</p>
+				<input type="number" oninput="ncrea()" id="ncrearcion" step="1" min="0">
+				<p id="crd" class="boton" onclick="crd()">Crea</p>
 			</section>
 
-			<section id="borra">
+			<!-- <section id="borra">
 				cuantos div quieres borrar 
 				<input type="number" step="1" min="0">
-				<p id="c" onclick="bo()">Crea</p>
-			</section>
+				<p id="bo" onclick="bo()">Borra</p>
+			</section> -->
 			<section id="divs">
 				
 			</section>
