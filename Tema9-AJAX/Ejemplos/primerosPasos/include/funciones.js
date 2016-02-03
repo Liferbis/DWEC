@@ -7,4 +7,3 @@ function init(){
 
     elemento.addEventListener("click", submitForm);
 }
-		

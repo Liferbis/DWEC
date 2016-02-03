@@ -1,6 +1,7 @@
-function submitForm(){
+function cargaenlace(lin){
     var respuesta;
     
+// 1-CREAR OBJETO
     if (window.XMLHttpRequest)   {
         respuesta = new XMLHttpRequest();
         respuesta.overrideMimeType('text/xml');
@@ -9,23 +10,23 @@ function submitForm(){
         respuesta = new ActiveXObject("Microsoft.XMLHTTP");   
     }
 
-    respuesta.open ('GET', 'include/datos.txt', true);
+
+    respuesta.open ('GET', lin, true);
+
     respuesta.send (null);
 
         
     respuesta.onreadystatechange = muestracontenido;   
 
     function muestracontenido (){
-        // alert(respuesta.status);
-        //alert(respuesta.readyState);  
-
+        
         if(respuesta.readyState  == 4){ // ya ha pasado todos los estados
             if(respuesta.status == 200){ // esta perfecto y sin errores
-                document.getElementById('dyn').value="Recibido:" + respuesta.responseText;              
+                
+                document.getElementById('res').innerHTML = respuesta.responseText;
             }else{
-                document.getElementById('dyn').value="Codigo de error " + respuesta.status;
+                document.getElementById('respuesta').value="Codigo de error " + respuesta.status;
             }
         }  
     };  
 }
-
