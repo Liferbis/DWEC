@@ -8,7 +8,7 @@ var corY;
 
 function init(){
 	elemento = document.getElementById("divMovil");
-	htm = document.documentElement;
+	htm = document.getElementById("cuerpo");
 	
 	elemento.addEventListener("click", agarrar);
 	htm.addEventListener("dblclick", parar);
@@ -16,8 +16,7 @@ function init(){
 
 function agarrar(){
 	elemento.setAttribute('class','mover');
-	//movible =document.getElementsByClassName('mover');
-	htm.addEventListener("mouseover", mover);
+	htm.addEventListener("mousemove", mover);
 }
 
 function mover(){
@@ -31,7 +30,7 @@ function mover(){
 
 function parar(){
 	elemento.removeAttribute('class');
-	htm.removeEventListener("mouseover", mover);
+	htm.removeEventListener("mousemove", mover);
 	// elemento.style.top = corX;
 	// elemento.style.left = corY;
 }

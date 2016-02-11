@@ -1,4 +1,4 @@
-function submitForm(){
+function submitForm(valor){
     var respuesta;
     
     if (window.XMLHttpRequest)   {
@@ -9,7 +9,7 @@ function submitForm(){
         respuesta = new ActiveXObject("Microsoft.XMLHTTP");   
     }
 
-    respuesta.open ('GET', 'datos/listado.txt', true);
+    respuesta.open ('GET', 'php/pagina1.php?cod='+valor , true);
     respuesta.send (null);
 
         
@@ -19,7 +19,9 @@ function submitForm(){
          
         if(respuesta.readyState  == 4){ // ya ha pasado todos los estados
             if(respuesta.status == 200){ // esta perfecto y sin errores
-                cargarDatos(respuesta.responseText);
+                if(valor != 0){
+                    cargarDatos(respuesta.responseText);
+                }
                 //document.getElementById('res').innerHTML = "Recibido:" + respuesta.responseText;              
             }else{
                 document.getElementById('res').innerHTML = "Codigo de error " + respuesta.status;
