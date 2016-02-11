@@ -1,0 +1,38 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#header{
+	background: #c0c0c0;
+	text-align: center;
+	padding: 5px;
+	font-weight: bold;
+}
+
+#cuerpo{
+	width: 90%;
+	margin: 20px auto 10px auto;
+	border: 2px solid #000;
+	text-align: center;
+	padding: 10px 0px;
+	background: #CECECE;
+}
+
+.btns{
+	padding: 4px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	border: 2px solid #f93;
+	background: #fc6;
+	border-radius: 15px;
+}
+
+#res{
+	text-align: center;
+	margin: 10px auto 0 auto;
+	width: 80%;
+	border-radius: 15px;
+	background: #ff9933;
+}
