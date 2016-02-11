@@ -1,4 +1,4 @@
-function submitForm(){
+function submitForm(datos){
     var respuesta;
     
     if (window.XMLHttpRequest)   {
@@ -19,8 +19,13 @@ function submitForm(){
          
         if(respuesta.readyState  == 4){ // ya ha pasado todos los estados
             if(respuesta.status == 200){ // esta perfecto y sin errores
-                cargarDatos(respuesta.responseText);
-                //document.getElementById('res').innerHTML = "Recibido:" + respuesta.responseText;              
+                
+                if(datos!=null){
+                    filtraDatos(respuesta.responseText);
+               }else{
+                    cargarDatos(respuesta.responseText);
+               }
+                             
             }else{
                 document.getElementById('res').innerHTML = "Codigo de error " + respuesta.status;
             }

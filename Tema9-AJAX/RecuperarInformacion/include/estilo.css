@@ -36,3 +36,11 @@
 	border-radius: 15px;
 	background: #ff9933;
 }
+
+#selected{
+	text-align: center;
+	margin: 10px auto 0 auto;
+	width: 40%;
+	border-radius: 15px;
+	background: #fc6;
+}
