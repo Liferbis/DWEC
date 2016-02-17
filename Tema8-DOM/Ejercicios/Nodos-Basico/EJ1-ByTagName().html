@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+
+		<script type="text/javascript">
+			addEventListener("load", init);
+
+			function init(){
+				par = document.getElementsByTagName("P");
+
+				pn();
+				pen();
+				enlac();
+			}
+
+			function pn(){
+				var texto ="El número de párrafos que hay es: " + par.length;
+				alert (texto);
+			}
+
+			function pen(){
+				var texto ="El número de enlaces de cada párrafo ";
+
+				for(var i=0; i < par.length; i++){
+					texto += "\nEn el parrafo " + (i+1) + " \n-Total de enlaces:" + par[i].getElementsByTagName("A").length;	
+				}
+				alert(texto);
+			}
+
+			function enlac(){
+				var texto ="El texto que contiene los enlaces";
+
+				for(var i=0; i < par.length; i++){
+					var enlace = par[i].getElementsByTagName("A");
+
+					if(enlace.length > 0){
+						texto += "\n* En el parrafo " + (i+1) + " \n**Total de enlaces:" + enlace.length;
+
+						for(var j=0; j < enlace.length; j++){
+							texto += "\n--Enlace " + (j+1) + " : " + enlace[j].childNodes[0].nodeValue;
+						}
+					}	
+				}
+				alert(texto);
+			}
+		</script>
+	</head>
+	<body>
+		<h1>
+			Texto de Prueba
+		</h1>
+		<p>
+			Probamos en este 
+			<strong>
+				texto
+			</strong>
+			, de manera que este es el primer párrafo.
+		</p>
+		<p id="segundoparrafo">
+			Ahora estamos en el segundo y colocamos un par de enlaces esternos 
+			<a href="#">
+				Buscador
+			</a> 
+			asi como quien no quiere.Y ahora el otro
+			<a href="#">
+				Correo Yahoo
+			</a>
+			. Esto es el final
+		</p>
+	</body>
+</html>

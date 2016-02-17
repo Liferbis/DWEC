@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#header{
+	background: #E0E0E0;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#cuerpo{
+	width: 100%;
+	float: left;
+	background: #A0A0A0;
+}
+
+#comandos{
+	padding-top: 30px;
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+#caja{
+	padding-top: 30px;
+	width: 50%;
+	float: right;
+	text-align: center;
+}

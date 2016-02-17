@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<title>Title Page</title>
+
+		<style type="text/css">
+			div{
+				min-height: 6em;
+			}
+			.sitio{
+				margin: 2em .2em;
+				padding: 1em .5em .5em .5em;
+				border: 1px #bebebe solid;
+				font-size: 2em;
+			}
+		</style>
+		
+		<script type="text/javascript" src="hoja3_ej8.js"></script>
+
+	</head>
+	<body>
+		<h3>Acceso a atributos y código CSS</h3>
+		<div>
+			<p>El siguiente enlace puede apuntar a alguno de estos sitios.</p>
+			<p>Haz click primero en el sitio alque quieras ir (éste cambiará de aspecto). Luego en el enlace (que tendrán un href de acuerdo al sitio escogido. El enlace abrirá en un página aparte.</p>
+		</div>
+
+		<div>
+			<span class="sitio" id="1" onclick="enlazar(0);">Google</span>
+			<span class="sitio" id="2" onclick="enlazar(1);">Yahoo</span>
+			<span class="sitio" id="3" onclick="enlazar(2);">Wikipedia</span>
+		</div>
+		<a href="" rel="" onclick="abrirNuevaVentana(this);">Enlace multidireccional</a>
+	</body>
+</html>

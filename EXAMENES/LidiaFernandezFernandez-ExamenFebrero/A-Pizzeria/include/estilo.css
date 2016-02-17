@@ -1,0 +1,33 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#header{
+	background: #c0c0c0;
+	text-align: center;
+	padding: 5px;
+	font-weight: bold;
+}
+
+body{
+	background: #F93;
+}
+
+#cuerpo{
+	width: 90%;
+	margin: 20px auto 10px auto;
+	border: 2px solid #000;
+	text-align: center;
+	padding: 10px 0px;
+	background: #CECECE;
+}
+
+.btn{
+	width: 50%;
+	background: #F93;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+}
