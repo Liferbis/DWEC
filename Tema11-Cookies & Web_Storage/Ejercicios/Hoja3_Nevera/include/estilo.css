@@ -1,0 +1,82 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#header{
+	background: #c0c0c0;
+	text-align: center;
+	padding: 5px;
+	font-weight: bold;
+}
+body{
+	padding: 10px;
+}
+
+#cuerpo{
+	width: 99%;
+	height: 440px;
+	margin: 20px auto 10px auto;
+	border: 2px solid #000;
+	text-align: center;
+	padding: 10px 0px;
+	background: #CECECE;
+	float: left;
+}
+
+#nevera{
+	margin: 5px 5px 5px auto;
+	width: 40%;
+	float: left;
+	padding: 10px;
+
+}
+
+#productos{
+	margin: 5px 5px 5px auto;
+	width: 40%;
+	float: right;
+	padding: 10px;
+	border: dashed 2px #A2A;
+	height: 400px;
+}
+
+#chec{
+	width: 100%;
+	height: 400px;
+	float: left;
+}
+
+/*#dat{
+	width: 19%;
+	height: 400px;
+	float: right;
+}*/
+
+
+#chec p{
+	margin: 15px auto 5px 40px;
+	text-align: left;
+	font-size: 18px;
+	font-weight: bold;
+
+}
+
+.prod{
+	width: 40px;
+}
+.btn{
+	background: #ff5;
+	padding: 3px;
+	font-size: 18px;
+	font-weight: bold;
+	border: outset 3px #FF0;
+	border-radius: 12px;
+	border-style: outset;
+}
+
+.btn:hover{
+	background: #FF0;
+	border: inset 3px #ff5;
+	font-weight: lighter;
+}

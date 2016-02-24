@@ -1,0 +1,56 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#header{
+	background: #c0c0c0;
+	text-align: center;
+	padding: 5px;
+	font-weight: bold;
+}
+
+#cuerpo{
+	width: 90%;
+	margin: 20px auto 10px auto;
+	border: 2px solid #000;
+	text-align: center;
+	padding: 10px 0px;
+	background: #CECECE;
+}
+
+#colores{
+	margin: 5px auto 5px auto;
+}
+
+#numero{
+	margin: 5px auto 5px auto;
+}
+
+#cdi{
+	margin: 5px auto 5px auto;
+}
+
+#borde{
+	margin: 5px auto 5px auto;
+}
+
+#btns{
+	margin: 5px auto 5px auto;
+}
+
+.btn{
+	background: #ff5;
+	padding: 3px;
+	font-size: 18px;
+	font-weight: bold;
+	border: outset 3px #FF0;
+	border-radius: 12px;
+	border-style: outset;
+}
+
+.btn:hover{
+	background: #FF0;
+	border: inset 3px #ff5;
+	font-weight: lighter;
+}

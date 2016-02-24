@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ejercicio</title>
+
+		
+		<link href="include/estilo.css" rel="stylesheet">
+
+		<script src="include/funciones.js"></script>
+		<script src="include/eventos.js"></script>
+		<script src="include/cookies.js"></script>
+
+	</head>
+	<body name="">
+		<header id="header">
+			<h1>Ejercicio</h1>
+		</header>
+
+		<section id="cuerpo">
+			<form >
+				<article id="colores">
+					<label >Color del fondo</label>
+					<input type="color" id="col">
+				</article>
+				<hr>
+				<article id="numero">
+					<label >Numero de divs</label>
+					<input type="number" name="num" id="num" min="0" step="1" >
+					<br>
+					<label>Color del fondo de los divs</label>
+					<input type="color" id="coloresD">
+				</article>
+				<hr>
+				<article id="borde">
+					<label>Estilo del borde</label>
+					<select id="bordeG">
+						<option value="0">Elige un tipo</option>
+						<option value="solid">Solido</option>
+						<option value="dotted">Discontinuo con puntos</option>
+						<option value="dashed">Discontinuo con rallas</option>
+						<option value="inset">Relieve interior</option>
+						<option value="outset">Relieve exterior</option>
+					</select>
+					<br>
+					<label >Color del borde</label>
+					<input type="color" id="bordeC">
+				</article>
+				<hr>
+				<article id="btns">
+					<input type="button" class="btn" id="btnA" value="Aceptar">
+					<input type="button" class="btn" id="btnV" value="Visualizar">
+					<input type="reset" class="btn" id="btnR" value="Reiniciar">
+					<input type="button" class="btn" id="btnB" value="Borra Cookies">
+				</article>
+			</form>
+
+			<section id="resultado">
+				
+			</section>
+		</section>
+		
+	</body>
+</html>
