@@ -2,7 +2,8 @@ var neveraIM;
 var imagen;
 var check;
 var dato;
-var bot;
+var botCom;
+var botCog;
 
 var pros = new Array();
 var cant = new Array();
@@ -24,11 +25,17 @@ function init(){
 	//neveraIM
 
 	imagen.addEventListener("click", cambio);
-	pintaHay();
+	pintaVacios();
 }
 
 function compra(){
 	
+	 for(var i = 0; i < check.childNodes.length; i++){
+	// 	if(){
+		alert(check.childNodes[i].type);
+			//.checked = true;
+	// 	}
+	 }
 }
 
 function cambio(){
@@ -50,13 +57,15 @@ function pintaHay(){
 	var prID;
 	for(var i = 0; i < pros.length; i++){
 		if(disp[i]>0){
+			var a = "pr"+i;
 			var pid = new Array();
-			pid["id"]= pros[i];
+			pid["id"] = a;
 			check.appendChild(CrearEtiquetas("p" , null , pid));
-			prID = document.getElementById(pros[i]);
+			prID = document.getElementById(a);
 
 			var auxx = new Array();
 			auxx["type"] = "checkbox";
+			auxx["checked"] = "false";
 			auxx["value"] = pros[i];
 			prID.appendChild(CrearEtiquetas("input", null, auxx));
 
@@ -65,14 +74,27 @@ function pintaHay(){
 			var aux = new Array();
 			aux["type"] = "number";
 			aux["class"] = "prod";
+			aux["id"] = pros[i];
 			aux["min"]= "0";
 			aux["max"]= disp[i];
 			var tex = " /" + disp[i];
 			
 			prID.appendChild(CrearEtiquetas("input", tex , aux));
 			prID.appendChild(CrearEtiquetas(null, tex, null));
+			document.getElementById(pros[i]).value = disp[i];
 		}
 	}
+
+	var bo = new Array();
+	bo["type"] = "button";
+	bo["id"] = "coger";
+	bo["class"] = "btn";
+	bo["value"] = "Coger";
+	check.appendChild(CrearEtiquetas("input" , null , bo));
+	botCog = document.getElementById(
+		"coger");
+	botCog.addEventListener(
+		"click", coger);
 }
 
 function pintaVacios(){
@@ -108,10 +130,11 @@ function pintaVacios(){
 	bo["type"] = "button";
 	bo["id"] = "comprar";
 	bo["class"] = "btn";
+	bo["value"] = "Comprar";
 	check.appendChild(CrearEtiquetas("input" , null , bo));
-	bot.document.getElementById(
+	botCom = document.getElementById(
 		"comprar");
-	bot.addEventListener(
+	botCom.addEventListener(
 		"click", compra);
 }
 

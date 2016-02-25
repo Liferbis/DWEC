@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background:#ED9;
+}
+
+#header{
+	background: url('../imagenes/nenes.png') #c0c0c0;
+	text-align: center;
+	
+	font-weight: bold;
+	color:#000;
+}
+
+#temas{
+	background: #ED6230;
+	text-align: center;
+	padding: 2px;
+}
+
+.tema{
+	margin: 0 auto;
+	padding: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	background: #EE8A00;
+	border-radius: 5px;
+}
+
+#artiTemas{
+	text-align: center;
+	float: left;
+	padding: 0 auto;
+	margin:20px 5% 0 5%;
+	padding:0 0 20px 0; 
+	width: 90%;
+	background: #EEB631;
+	border: 1px solid #EE8A00;
+}
+
+#qt1{
+	margin: 0 auto;
+	width: 100%;
+	float: left;
+}
+
+.frase{
+	width: 45%;
+	float:left;
+	font-weight: bold;
+}
+
+.frase input{
+	width: 50px;
+}
+
+.palabras{
+	width: 45%;
+	float: right;
+
+}
+
+.palabra{
+	border: 1px solid #EE8A00;
+	font-weight: bold;
+	margin: 3px;
+}
+
+.palabra:hover{
+	background: #EE5400;
+	color: #fff;
+}
+
+.boto{
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-top: 10px;
+
+}
+
+.Corregir{
+	background: #00cc00;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.Corregir:hover{
+	background: #006200;
+	color: #fff;
+}
+
+.Cancelar{
+	background: #FF0000;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.Cancelar:hover{
+	background: #AF000E;
+	color:#fff;
+}
+
+.bien{
+	background: #3CBF3F;
+	text-align: center;
+	font-size: 25px;
+	margin-top: 20px auto 10px auto;
+}
+
+#erroneo{
+	background: #D0231E;
+	text-align: center;
+	font-size: 25px;
+	margin-top: 20px auto 10px auto;
+}
