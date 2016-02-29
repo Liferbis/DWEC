@@ -11,133 +11,31 @@
 
 		<script src="include/funciones.js"></script>
 		<script src="include/temas.js"></script>
-		<script src="include/fueraTemas.js"></script>
 		<script src="include/eventos.js"></script>
 
 	</head>
 	<body>
 		<header id="header">
-			<h1>Educa-Web</h1>
-			<br>
-			<h3>Ejercicios de inglés</h3>
-			<br>
-			<hr>
+			
+			
 		</header>
 		<section id="cuerpecito">
+			<article id="titulo">
+				<h1>Educa-Web</h1>
+				<small>Ejercicios de inglés</small>
+			</article>
 			<article id="temas">
-				<button type="button" class="tema" onclick="Temas1()">Tema 1</button>
-				<button type="button" class="tema" onclick="Temas2()">Tema 2</button>
-				<button type="button" class="tema" onclick="Temas3()">Tema 3</button>
-				<button type="button" class="tema" onclick="Temas4()">Tema 4</button>
+				<input type="button" id="Tem1" class="tema" value="Tema 1">
+				<input type="button" id="Tem2" class="tema" value="Tema 2">
+				<input type="button" id="Tem3" class="tema" value="Tema 3">
+				<input type="button" id="Tem4" class="tema" value="Tema 4">
 			</article>
 			<article id="artiTemas">
-				<section id="inicial">
-					<h3>Has de elegin un tema para poder comprobar tu nivel de inglés</h3>
-				</section>
-				<section id="correc" class="bien">
-					Muy bien!! Has acertado!! 
-					<br>
-					¡Pasa al siguiente nivel!
-				</section>
-				<section id="final" class="bien">
-					<h1>Enorabuena!!</h1>
-					Has Llegado al final con un total de fallos de: <span id="Terr"></sapan>!! 
-					<br>
-					¡Pasa al siguiente nivel!
-				</section>
-				<section id="erroneo" class="bien">
+								
+				<section id="temasCre">
 					
-					ERROR !! Has fallado!! 
-					<br>
-					<small> ¿No crees que deberias de estudiar un poco más?</small><br>
-					ERROR número: 
-					<span id="Nerr"></sapan> 
-					<br>
-					
+				</section>
 
-				</section>
-				<section id="Tema1">
-					<h3>TEMA 1</h3><br>
-					<section id="qt1">
-						<article id="frasT1"  class="frase">
-							<p>Es de color  
-								<input type="text" disabled="true" id="ipat1" class="control" >
-								como la leche 
-							</p>
-						</article>
-						<article id="pa1" class="palabras">
-							<p><small>Clica en la palabra para elegir la correcta</small></p>
-							<p class="palabra" onclick="p1('white')">white</p>
-							<p class="palabra" onclick="p1('red')">red</p>
-							<p class="palabra" onclick="p1('black')">black</p>
-						</article>
-						<article class="boto">
-							<button type="button" class="Corregir" onclick="cot1()">Corregir</button>
-							<button type="button" class="Cancelar" onclick="Cancelar()">Cancelar</button>
-						</article>
-					</section>
-					
-				</section>
-				<section id="Tema2">
-					<h3>TEMA 2</h3>
-					<section id="qt2">
-						<article id="frasT2"  class="frase">
-							<p>Para abrir la puerta es push o  
-								<input type="text" disabled="true" id="ipat2" class="control" > 
-							</p>
-						</article>
-						<article id="pa2" class="palabras">
-							<p><small>Clica en la palabra para elegir la correcta</small></p>
-							<p class="palabra" onclick="p2('out')">out</p>
-							<p class="palabra" onclick="p2('pull')">pull</p>
-							<p class="palabra" onclick="p2('vacant')">vacant</p>
-						</article>
-						<article class="boto">
-							<button type="button" class="Corregir" onclick="cot2()">Corregir</button>
-							<button type="button" class="Cancelar" onclick="Cancelar()">Cancelar</button>
-						</article>
-					</section>
-				</section>
-				<section id="Tema3">
-					<h3>TEMA 3</h3>
-					<section id="qt3">
-						<article id="frasT3"  class="frase">
-							<p>The father is affectionately nickname is ...  
-								<input type="text" disabled="true" id="ipat3" class="control" > 
-							</p>
-						</article>
-						<article id="pa3" class="palabras">
-							<p><small>Clica en la palabra para elegir la correcta</small></p>
-							<p class="palabra" onclick="p3('dady')">dady</p>
-							<p class="palabra" onclick="p3('daddy')">daddy</p>
-							<p class="palabra" onclick="p3('father')">father</p>
-						</article>
-						<article class="boto">
-							<button type="button" class="Corregir" onclick="cot3()">Corregir</button>
-							<button type="button" class="Cancelar" onclick="Cancelar()">Cancelar</button>
-						</article>
-					</section>
-				</section>
-				<section id="Tema4">
-					<h3>TEMA 4</h3>
-					<section id="qt4">
-						<article id="frasT4"  class="frase">
-							<p>You're the ...  
-								<input type="text" disabled="true" id="ipat4" class="control" > 
-							</p>
-						</article>
-						<article id="pa4" class="palabras">
-							<p><small>Clica en la palabra para elegir la correcta</small></p>
-							<p class="palabra" onclick="p4('better')">Better</p>
-							<p class="palabra" onclick="p4('worst')">Worst</p>
-							<p class="palabra" onclick="p4('Useless')">Useless</p>
-						</article>
-						<article class="boto">
-							<button type="button" class="Corregir" onclick="cot4()">Corregir</button>
-							<button type="button" class="Cancelar" onclick="Cancelar()">Cancelar</button>
-						</article>
-					</section>
-				</section>
 			</article>
 		</section>
 

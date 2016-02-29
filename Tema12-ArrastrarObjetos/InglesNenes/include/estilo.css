@@ -10,9 +10,17 @@ body{
 #header{
 	background: url('../imagenes/nenes.png') #c0c0c0;
 	text-align: center;
-	
+	height: 100px;
 	font-weight: bold;
 	color:#000;
+}
+
+#titulo{
+	background: #ED9;
+	text-align: center;
+	margin-top: 5px;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 #temas{
@@ -22,13 +30,18 @@ body{
 }
 
 .tema{
-	margin: 0 auto;
+	margin: 5px;
 	padding: 5px;
 	font-size: 18px;
 	font-weight: bold;
 	text-align: center;
 	background: #EE8A00;
 	border-radius: 5px;
+}
+
+.tema:hover{
+	background: #EE8A3F;
+	color:#FFF;
 }
 
 #artiTemas{
@@ -75,7 +88,7 @@ body{
 	color: #fff;
 }
 
-.boto{
+#boto{
 	width: 100%;
 	float: left;
 	text-align: center;
@@ -83,26 +96,26 @@ body{
 
 }
 
-.Corregir{
+#Corregir{
 	background: #00cc00;
 	font-size: 18px;
 	font-weight: bold;
 	padding: 5px;
 }
 
-.Corregir:hover{
+#Corregir:hover{
 	background: #006200;
 	color: #fff;
 }
 
-.Cancelar{
+#Cancelar{
 	background: #FF0000;
 	font-size: 18px;
 	font-weight: bold;
 	padding: 5px;
 }
 
-.Cancelar:hover{
+#Cancelar:hover{
 	background: #AF000E;
 	color:#fff;
 }
