@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Practica 1</title>
+
+        <!-- LIBRERIAS JQuery -->
+        <script src="JQuery/jq.min.js" type="text/javascript"></script>
+        <script src="JQuery/Jq_draggables.js" type="text/javascript"></script>
+        <script src="JQuery/Jalerts/Ja_fun.js" type="text/javascript"></script>
+        
+        <link rel="stylesheet" href="JQuery/Jalerts/Ja_estilo.css">
+        
+
+        <!-- FUNCIONES Y ESTILO propios -->
+        <script src="include/funciones.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="include/estilo.css">
+
+
+        
+    </head>
+    <body>
+        <header id="header">
+            <h1>Practica 1 - SELECTORES</h1>
+        </header>
+        <section id="cuerpo">
+            <form id="form1" runat="server">
+                <h2>Acciones de seleccion disponibles:</h2>
+                <div id="controls">
+                    <a href="#" id="SelectorSimple">Selector simple: div span</a> 
+                    <a href="#" id="SelectorCombinado">Selector combinado: div span, ul</a> 
+                    <a href="#" id="SelectorHijo">SelectorHijo: ul > li > a</a> 
+                    <a href="#" id="SelectorEnlaceEspecifico">Selector de enlace especifico: starting with http://</a> 
+                    <a href="#" id="SelectorEnlaceCIIN">Enlazando a www.ciin.es</a> 
+                    <a href="#" id="SelectorSpanConClase">Todos los spans que tengan una clase: span[class]</a>
+
+                    <a href="#" id="SelectorPrimerEnlaceEnPag">Primer enlace en la pagina: a:first</a> 
+                    <a href="#" id="SelectorListaPar">Items de lista pares: li:even</a> 
+                    <a href="#" id="SelectorCeldaTabla">Selector de celdas de tabla: table#unaTabla td:first-child</a>
+
+                    <a href="#" id="SelectorCheckedInput">Seleccionar los campos de entrada con check: input:checked</a> 
+                    <a href="#" id="SelectorPassword">Selector de Password: :password</a> 
+                    <a href="#" id="NotSelectorCheckedInput"> Seleccionar los campos de entrada sin check: input:not(:checked)</a>
+                </div>
+                <div id="contextDiv">
+                    <h2>Items de una lista</h2>
+                    <ul id="mainList">
+                        <li><a href="http://www.ciin.es">Item de lista 1 con enlace a CIIN</a></li>
+                        <li>Item de lista 2</li>
+                        <li><a href="#">Item de lista 3 con enlace esta página</a></li>
+                        <li><a href="http://jquery.com">JQuery.com</a></li>
+                        <li>Item de lista 5</li>
+                    </ul>
+                    <h2>Diferentes tipos de elementos de tipo div</h2>
+                    <div id="namedDiv">Esto es un div con id=nameDiv</div>
+                    <div><span class="unaClase">Esto es un elemento span, dentro de un elemento div sin identificador, pero con una clase</span></div>
+                    <div><span class="unaClase">Esto es otro elemento span, dentro de un elemento div sin identificador, pero con una clase</span></div>
+                    <div><span>Esto es un elemento span, dentro de un elemento div sin identificador y sin clase</span></div>
+                    <div><a href="#">Esto es un enlace, dentro de un elemento div, que no se enlaza a ninguna dirección externa</a></div>
+
+                    <h2>Ejemplo de Tabla</h2>
+                    <table cellspacing="1" border="0" id="unaTabla">
+                        <thead>
+                            <tr>
+                                <td>Col1</td>
+                                <th>Col2</th>
+                                <th>Col3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Celda1</td>
+                                <td>Celda2</td>
+                                <td>Celda3</td>
+                            </tr>
+                            <tr>
+                                <td>Celda4</td>
+                                <td>Celda5</td>
+                                <td>Celda6</td>
+                            </tr>
+                            <tr>
+                                <td>Celda7</td>
+                                <td>Celda8</td>
+                                <td>Celda9</td>
+                            </tr>
+                            <tr>
+                                <td>Celda10</td>
+                                <td>Celda11</td>
+                                <td>Celda12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>Diferentes tipos de elementos de tipo input</h2>
+                    <div>
+                        <p>Introduce nombre de usuario del alumno:
+                        <input type="text" name="unCampoDeTexto" id="unCampoDeTexto"/>
+                        </p>
+                        <p>Introduce tu contraseña</p>
+                        <input type="password" name="unCampoPassword" id="Text1"/>
+                    </div>
+                    <div>
+                        Botones de tipo radio (Radio buttons):
+                        <input type="radio" value="A" id="radioA" name="radioGroup"/>
+                        A
+                        <input type="radio" checked="checked" value="B" id="radioB" name="radioGroup"/>
+                        B
+                        <input type="radio" value="C" id="radioC" name="radioGroup"/>
+                        C
+                    </div>
+                    <div>
+                        Botones de tipo check (Checkboxes):
+                        <input type="checkbox" value="1" id="checkbox1" name="checkboxGroup"/>
+                        1
+                        <input type="checkbox" value="2" id="checkbox2" name="checkboxGroup"/>
+                        2
+                        <input type="checkbox" value="3" id="checkbox3" name="checkboxGroup" checked="checked"/>
+                        3
+                        <input type="checkbox" value="4" id="checkbox4" name="checkboxGroup"/>
+                        4
+                    </div>
+                    <button id="btnEnviar" type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+</body>
+</html>

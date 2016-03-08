@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background:#ED9;
+}
+
+#header{
+	background:#c0c0c0;
+	padding-top: 5px;
+	text-align: center;
+	font-weight: bold;
+	color:#000;
+}
+
+#cuerpo{
+	background: #ED6230;
+	text-align: center;
+	padding: 2px;
+	width: 100%;
+	float: left;
+}
+
+
+#frases{
+	padding-top: 20px;
+	text-align: center;
+	float: left;
+	/*padding: 0 auto;*/
+	
+	/*padding:0 0 20px 0;*/ 
+	width: 49%;
+	background: #EEB631;
+	border: 1px solid #EE8A00;
+	height: 200px;
+}
+
+#frase{
+	width: 90%;
+}
+
+#compro{
+	padding-top: 20px;
+	text-align: center;
+	width: 49%;
+	float: right;
+	background: #EEB631;
+	border: 1px solid #EE8A00;
+	height: 200px;
+}
+
+#comprobadora{
+	margin: auto;
+	width: 90%;
+	height: 80%;
+	border: 2px dotted #000;
+}
+
+#t, #t1{
+	text-align: center;
+}
+
+#t1{
+	font-weight: bold;
+}
+
+.btn{
+	margin: 5px;
+	padding: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	background: #EE8A00;
+	border-radius: 5px;
+}
+
+.btn:hover{
+	background: #EE8A3F;
+	color:#FFF;
+}
+
+

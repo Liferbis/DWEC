@@ -1,0 +1,58 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#header{
+	background: #c0c0c0;
+	text-align: center;
+}
+
+body{
+	float: left;
+	width: 100%;
+	background: #FFEBCD;
+}
+
+#cuerpo{
+	float: left;
+	
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	min-height: 100%;
+}
+
+#ques{
+	border: 1px dashed #000 ;
+	display: block;
+	float: left;
+	width: 49%;
+	font-size: 16px;
+}
+
+#hacer{
+	border: 1px dashed #000 ;
+	display: block;
+	float: right;
+	width: 49%;
+	font-size: 16px;
+}
+
+#ques p{
+	margin: 3px 3px 0px 10px;
+	display: block;
+	text-decoration: none;
+	color: #000;
+	font-size: 18px;
+}
+
+.destacadoP{
+	background: skyblue;
+	color:red;
+}
+
+.rincon{
+	font-size: 34px;
+}
+

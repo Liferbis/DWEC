@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#header{
+	background: #c0c0c0;
+	text-align: center;
+}
+
+body{
+	width: 100%;
+	background: #FFEBCD;
+}
+
+#cuerpo{
+	width: 80%;
+	margin: 10px auto;
+	height: 100%;
+	min-height: 100%;
+}
+
+#ques{
+	border: 2px solid #123;
+	width: 100%;
+	min-height: 100px;
+	margin: 0 auto;
+}
+
+
+

@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#header{
+	background: #c0c0c0;
+	text-align: center;
+}
+
+body{
+	width: 100%;
+}
+
+#cuerpo{
+	background: #FFEBCD;
+	width: 95%;
+	margin: 0 auto;
+
+}
+
+#controls{
+	border: 1px dashed #000 ;
+	display: block;
+	font-size: 16px;
+}
+
+#controls a{
+	margin: 3px 3px 0px 50px;
+	display: block;
+	text-decoration: none;
+	color: #000;
+	font-size: 16px;
+}
+
+.destacado{
+	margin: 3px 3px;
+	border: 1px solid #F93;
+	background: #444;
+	color:#fff;
+}

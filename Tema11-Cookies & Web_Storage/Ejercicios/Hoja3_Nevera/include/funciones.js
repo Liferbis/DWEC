@@ -14,7 +14,7 @@ addEventListener("load", init);
 
 function init(){	
 	pros = ["Leche", "Agua", "Zumo", "Yogures", "Mantequilla", "Verduras", "Jamón", "Pescado", "Carne"];
-	cant = ["5", "6", "3", "24", "2", "5", "8", "4", "5"];
+	//cant = ["5", "6", "3", "24", "2", "5", "8", "4", "5"];
 	disp = ["1", "2", "1", "4", "0", "2", "7", "0", "3"];
 	
 	check = document.getElementById("chec");
@@ -65,10 +65,9 @@ function pintaHay(){
 
 			var auxx = new Array();
 			auxx["type"] = "checkbox";
-			auxx["checked"] = "false";
+			auxx["name"] = "ch";
 			auxx["value"] = pros[i];
 			prID.appendChild(CrearEtiquetas("input", null, auxx));
-
 			prID.appendChild(CrearEtiquetas(null, pros[i], null));
 
 			var aux = new Array();
@@ -81,7 +80,7 @@ function pintaHay(){
 			
 			prID.appendChild(CrearEtiquetas("input", tex , aux));
 			prID.appendChild(CrearEtiquetas(null, tex, null));
-			document.getElementById(pros[i]).value = disp[i];
+			document.getElementById(pros[i]).value = "1";
 		}
 	}
 
@@ -91,14 +90,12 @@ function pintaHay(){
 	bo["class"] = "btn";
 	bo["value"] = "Coger";
 	check.appendChild(CrearEtiquetas("input" , null , bo));
-	botCog = document.getElementById(
-		"coger");
-	botCog.addEventListener(
-		"click", coger);
+	botCog = document.getElementById("coger");
+	botCog.addEventListener("click", cogerr);
 }
 
 function pintaVacios(){
-	 borrarHijos(chec);
+	borrarHijos(chec);
 	var prID;
 	for(var i = 0; i < pros.length; i++){
 		if(disp[i] == 0){
@@ -132,10 +129,40 @@ function pintaVacios(){
 	bo["class"] = "btn";
 	bo["value"] = "Comprar";
 	check.appendChild(CrearEtiquetas("input" , null , bo));
-	botCom = document.getElementById(
-		"comprar");
-	botCom.addEventListener(
-		"click", compra);
+	botCom = document.getElementById("comprar");
+	botCom.addEventListener("click", compra);
+}
+
+function cogerr() {
+	var c = 0;
+	var posicion;
+	var nod = document.getElementsByName("ch");
+	for(var i = 0; i < nod.length; i++){
+		if(nod[i].checked){
+			c++;
+			alert(nod[i].value);//da el nombre
+			alert(document.getElementById(nod[i].value).value); //da el numero en el input
+			posicion = pros.indexOf(nod[i].value); //da la posicion en el array
+		}
+	}
+
+	if(c == 0){
+		alert("No has seleccionado ningun producto!");
+	}
+
+}
+
+function localStor() {
+		pros = ["Leche", "Agua", "Zumo", "Yogures", "Mantequilla", "Verduras", "Jamón", "Pescado", "Carne"];
+		cant = ["5", "6", "3", "24", "2", "5", "8", "4", "5"];
+		disp = ["1", "2", "1", "4", "0", "2", "7", "0", "3"];
+	for(var i = 0; i < pros.length; i++){
+		//localStorage.pros[i] = 
+		cant
+		disp
+	}
+	//nombre=nom; 
+	//localStorage.email=ema; 
 }
 
 

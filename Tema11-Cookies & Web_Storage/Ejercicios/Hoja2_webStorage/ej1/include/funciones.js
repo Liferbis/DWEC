@@ -18,12 +18,12 @@ addEventListener("load", init);
 
 function init(){	
 	res = document.getElementById('respuesta');
-btnGS = document.getElementById("btnGS");
-btnOS = document.getElementById("btnOS");
-btnES = document.getElementById("btnES");
-btnGO = document.getElementById("btnGO");
-btnOO = document.getElementById("btnOO");
-btnEO = document.getElementById("btnEO");
+	btnGS = document.getElementById("btnGS");
+	btnOS = document.getElementById("btnOS");
+	btnES = document.getElementById("btnES");
+	btnGO = document.getElementById("btnGO");
+	btnOO = document.getElementById("btnOO");
+	btnEO = document.getElementById("btnEO");
 
 	btnGS.addEventListener("click", guarSesion);
 	btnOS.addEventListener("click", obSesion);

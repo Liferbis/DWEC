@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#header{
+	background: #F93;
+	text-align: center;
+}
+
+body{
+	width: 100%;
+	background: #FFEBCD;
+}
+
+#cuerpo{
+	float: left;
+	width: 100%;
+	margin: 10px auto;
+	height: 100%;
+	min-height: 100%;
+}
+#cuerpo ul li{
+	width: 50%;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	list-style: none;
+}
+
